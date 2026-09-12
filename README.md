@@ -1,4 +1,5 @@
 
+
 # 🎬 Astra Lux Cinema
 
 Astra Lux Cinema là website đặt vé xem phim trực tuyến, được xây dựng nhằm mô phỏng quy trình hoạt động của một hệ thống rạp chiếu phim hiện đại.
@@ -41,23 +42,28 @@ Hệ thống sẽ được phát triển theo hướng có backend và cơ sở 
 ## 🛠️ Công nghệ sử dụng
 
 ### Frontend
+
 - HTML5
 - CSS3
 - JavaScript
 - Bootstrap (dự kiến, nếu cần)
 
 ### Backend
+
 - PHP
 
 ### Database
+
 - MySQL
 
 ### Môi trường phát triển
+
 - XAMPP
 - Apache
 - phpMyAdmin
 
 ### Công cụ phát triển
+
 - Visual Studio Code
 - Git
 - GitHub
@@ -69,6 +75,7 @@ Hệ thống sẽ được phát triển theo hướng có backend và cơ sở 
 
 ```text
 Astra-Lux-Cinema/
+
 │
 ├── index.php
 ├── config/
@@ -126,6 +133,7 @@ Astra-Lux-Cinema/
 ## 📋 Kế hoạch phát triển
 
 ### Giai đoạn 1 — Nền tảng PHP & Frontend
+
 - [ ] Cài đặt và cấu hình XAMPP.
 - [ ] Tạo project PHP.
 - [ ] Tạo cấu trúc thư mục dự án.
@@ -137,6 +145,7 @@ Astra-Lux-Cinema/
 - [ ] Thiết kế giao diện bằng CSS.
 
 ### Giai đoạn 2 — Database & PHP cơ bản
+
 - [ ] Thiết kế cơ sở dữ liệu MySQL.
 - [ ] Tạo database và các bảng.
 - [ ] Kết nối PHP với MySQL.
@@ -145,6 +154,7 @@ Astra-Lux-Cinema/
 - [ ] Xây dựng chức năng thêm, sửa, xóa phim cơ bản.
 
 ### Giai đoạn 3 — Người dùng & Đặt vé
+
 - [ ] Đăng ký tài khoản.
 - [ ] Đăng nhập và đăng xuất.
 - [ ] Quản lý thông tin tài khoản.
@@ -157,6 +167,7 @@ Astra-Lux-Cinema/
 - [ ] Xem lịch sử đặt vé.
 
 ### Giai đoạn 4 — Quản trị & Hoàn thiện
+
 - [ ] Xây dựng trang quản trị.
 - [ ] Quản lý phim.
 - [ ] Quản lý rạp và phòng chiếu.
@@ -168,6 +179,7 @@ Astra-Lux-Cinema/
 - [ ] Viết tài liệu dự án.
 
 ### Giai đoạn 5 — Định hướng Android
+
 - [ ] Xây dựng ứng dụng Android.
 - [ ] Xây dựng API phục vụ ứng dụng.
 - [ ] Kết nối Android với backend.
@@ -227,11 +239,17 @@ Ví dụ:
 
 ```text
 feat: create PHP project structure
+
 feat: add cinema navigation
+
 style: add base cinema theme
+
 feat: connect PHP to MySQL
+
 feat: display movie list
+
 fix: correct booking form validation
+
 docs: update project README
 ```
 
@@ -242,6 +260,7 @@ docs: update project README
 Nhóm dành **2 ngày mỗi tuần** để học và phát triển dự án.
 
 Mỗi tuần sẽ:
+
 - Thống nhất task.
 - Phân công người thực hiện.
 - Cập nhật tiến độ.

@@ -1,281 +1,514 @@
-
-
 # 🎬 Astra Lux Cinema
 
-Astra Lux Cinema là website đặt vé xem phim trực tuyến, được xây dựng nhằm mô phỏng quy trình hoạt động của một hệ thống rạp chiếu phim hiện đại.
+Astra Lux Cinema is a modern online cinema booking platform designed to provide users with a convenient and intuitive experience for discovering movies, viewing showtimes, selecting seats, and booking cinema tickets online.
 
-Dự án được phát triển bởi Nguyễn Lâm Hữu Hùng và Nguyễn Vũ Đăng Thành với mục tiêu vừa học lập trình, vừa xây dựng một sản phẩm thực tế có thể đưa vào CV và tiếp tục mở rộng thành ứng dụng Android trong tương lai.
-
----
-
-## 📌 Giới thiệu dự án
-
-Website hướng đến việc cung cấp trải nghiệm cho người dùng:
-
-- Xem danh sách phim đang chiếu.
-- Xem phim sắp chiếu.
-- Xem thông tin chi tiết phim.
-- Xem lịch chiếu.
-- Chọn rạp, suất chiếu và ghế.
-- Đặt vé xem phim.
-- Mua vé trực tuyến.
-- Quản lý thông tin đặt vé.
-- Xem lịch sử đặt vé.
-
-Hệ thống sẽ được phát triển theo hướng có backend và cơ sở dữ liệu để xử lý dữ liệu người dùng, phim, lịch chiếu và đơn đặt vé.
+The project is developed as a practical learning project and portfolio product, with a focus on web development, database management, user experience, teamwork, and real-world software development practices.
 
 ---
 
-## 🎯 Mục tiêu dự án
+## 🌌 Project Overview
 
-1. Xây dựng website đặt vé xem phim có giao diện hiện đại.
-2. Học và áp dụng PHP để xây dựng backend.
-3. Sử dụng MySQL để lưu trữ và quản lý dữ liệu.
-4. Áp dụng HTML, CSS và JavaScript để xây dựng giao diện và tương tác.
-5. Học cách làm việc nhóm bằng Git và GitHub.
-6. Xây dựng quy trình phát triển phần mềm theo từng giai đoạn.
-7. Hoàn thiện một dự án có thể trình bày trong CV và portfolio.
-8. Định hướng phát triển phiên bản ứng dụng Android trong tương lai.
+Astra Lux Cinema aims to simulate a complete cinema booking ecosystem with three main types of users:
+
+- **Client:** Browse movies, view showtimes, select seats, and book tickets.
+- **Staff:** Manage bookings, validate tickets, check customer information, and monitor showtimes.
+- **Admin:** Manage movies, cinemas, rooms, seats, showtimes, users, staff, promotions, and system reports.
+
+The platform is designed with a premium, cinematic, and futuristic visual identity inspired by modern cinema websites.
 
 ---
 
-## 🛠️ Công nghệ sử dụng
+## 🎯 Project Objectives
+
+The main objectives of this project are:
+
+1. Build a functional online cinema ticket booking website.
+2. Convert a professional UI/UX design into a working web application.
+3. Practice frontend development using HTML, CSS, and JavaScript.
+4. Learn backend development with PHP.
+5. Design and manage a relational database using MySQL.
+6. Implement user authentication and role-based authorization.
+7. Develop movie, cinema, room, seat, showtime, and booking management features.
+8. Practice Git and GitHub collaboration in a team environment.
+9. Learn the software development process through a real-world project.
+10. Build a project that can be deployed online and presented in a CV or portfolio.
+11. Develop a foundation for future mobile application development.
+
+---
+
+## 🛠️ Technologies Used
 
 ### Frontend
 
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap (dự kiến, nếu cần)
+- Responsive Web Design
+- Figma / Stitch for UI/UX design reference
 
 ### Backend
 
 - PHP
+- PHP Sessions
+- PHP REST-style endpoints when necessary
+- Server-side validation
+- Role-based access control
 
 ### Database
 
 - MySQL
+- Relational database design
+- SQL
+- Database normalization
+- Foreign keys and relational constraints
 
-### Môi trường phát triển
-
-- XAMPP
-- Apache
-- phpMyAdmin
-
-### Công cụ phát triển
+### Development Tools
 
 - Visual Studio Code
 - Git
 - GitHub
-- Figma (thiết kế giao diện nếu cần)
+- Web browser
+- PHP built-in development server
+
+### Deployment
+
+- PHP-compatible web hosting or cloud server
+- Apache or Nginx
+- MySQL-compatible database
+- HTTPS/SSL
+- Custom domain or hosting subdomain
+
+> The project is designed to be deployable on a public hosting environment so that users can access the website through a URL without running the development environment on their own computers.
 
 ---
 
-## 📂 Cấu trúc thư mục dự kiến
+## ✨ Main Features
+
+### Client Features
+
+- View the homepage
+- Browse currently showing movies
+- Browse coming-soon movies
+- Search and filter movies
+- View movie details
+- View movie synopsis, genre, duration, cast, and trailer
+- View cinemas and showtimes
+- Select cinema and showtime
+- Select available seats
+- Review booking information
+- Simulate or process ticket payment
+- Receive booking confirmation
+- View electronic ticket
+- View booking history
+- Manage personal profile
+- Manage saved movies or watchlist
+- View membership information or loyalty points
+- Log in, register, and log out
+
+### Staff Features
+
+- Staff dashboard
+- View daily booking statistics
+- Search bookings by booking code, customer name, phone number, or email
+- View booking details
+- Validate booking tickets
+- Check in customers
+- Verify ticket status
+- View movie and showtime information
+- Monitor cinema room occupancy
+- View staff profile
+- Manage account settings
+- Log out
+
+### Admin Features
+
+- Admin dashboard
+- View revenue statistics
+- View booking statistics
+- View ticket sales
+- View registered users
+- Manage movies
+- Manage movie genres
+- Manage cinemas
+- Manage cinema rooms
+- Manage seats
+- Manage showtimes
+- Manage bookings
+- Manage clients
+- Manage staff accounts
+- Manage promotions
+- View revenue reports
+- Manage system settings
+- Manage administrator profile
+- Log out
+
+---
+
+## 🧩 System Roles
+
+| Role | Main Responsibilities |
+|------|------------------------|
+| Client | Browse movies, select showtimes, select seats, and book tickets |
+| Staff | Validate bookings, check in customers, and monitor showtimes |
+| Admin | Manage the entire cinema booking system |
+
+The system will implement role-based authorization to ensure that each account can only access features permitted for its role.
+
+---
+
+## 🗂️ Planned Project Structure
 
 ```text
 Astra-Lux-Cinema/
-
 │
 ├── index.php
+├── README.md
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── components.css
+│   │   └── responsive.css
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── movies.js
+│   │   ├── booking.js
+│   │   └── seats.js
+│   │
+│   └── images/
+│
 ├── config/
 │   └── database.php
-│
-├── pages/
-│   ├── movies.php
-│   ├── movie-detail.php
-│   ├── showtimes.php
-│   ├── booking.php
-│   └── contact.php
-│
-├── admin/
-│   ├── index.php
-│   ├── movies/
-│   ├── showtimes/
-│   └── bookings/
 │
 ├── includes/
 │   ├── header.php
 │   ├── footer.php
+│   ├── navbar.php
 │   └── auth.php
 │
-├── css/
-│   └── style.css
+├── auth/
+│   ├── login.php
+│   ├── register.php
+│   ├── logout.php
+│   └── forgot-password.php
 │
-├── js/
-│   └── main.js
+├── client/
+│   ├── index.php
+│   ├── movies.php
+│   ├── movie-detail.php
+│   ├── showtimes.php
+│   ├── seats.php
+│   ├── booking-confirmation.php
+│   ├── payment.php
+│   ├── e-ticket.php
+│   ├── booking-history.php
+│   └── profile.php
 │
-├── assets/
-│   └── images/
+├── staff/
+│   ├── dashboard.php
+│   ├── bookings.php
+│   ├── booking-detail.php
+│   ├── check-in.php
+│   ├── showtimes.php
+│   └── profile.php
+│
+├── admin/
+│   ├── dashboard.php
+│   ├── movies.php
+│   ├── genres.php
+│   ├── cinemas.php
+│   ├── rooms.php
+│   ├── seats.php
+│   ├── showtimes.php
+│   ├── bookings.php
+│   ├── users.php
+│   ├── staff.php
+│   ├── promotions.php
+│   ├── reports.php
+│   └── settings.php
 │
 ├── database/
-│   └── schema.sql
+│   └── astra_lux_cinema.sql
 │
-├── README.md
-└── .gitignore
+└── docs/
+    ├── system-design.md
+    ├── database-design.md
+    └── api-documentation.md
 ```
 
-> Đây là cấu trúc dự kiến. Nhóm sẽ điều chỉnh trong quá trình phát triển để phù hợp với kiến trúc dự án.
+> The structure may be adjusted during development according to the project's requirements and implementation progress.
 
 ---
 
-## 👥 Thành viên phát triển
+## 🗄️ Planned Database Entities
 
-| Thành viên | Vai trò ban đầu |
-|---|---|
-| Nguyễn Lâm Hữu Hùng | Frontend HTML, cấu trúc trang, nội dung và tích hợp PHP |
-| Nguyễn Vũ Đăng Thành | Frontend CSS, giao diện, bố cục và hỗ trợ tích hợp PHP |
+The database is expected to include the following main entities:
 
-> Vai trò có thể luân phiên trong các giai đoạn sau để cả hai thành viên đều hiểu và có khả năng phát triển toàn bộ hệ thống.
+- Users
+- Roles
+- Movies
+- Genres
+- Cinemas
+- Rooms
+- Seats
+- Showtimes
+- Bookings
+- Booking Details
+- Payments
+- Promotions
+- Reviews
+- Notifications
 
----
-
-## 📋 Kế hoạch phát triển
-
-### Giai đoạn 1 — Nền tảng PHP & Frontend
-
-- [ ] Cài đặt và cấu hình XAMPP.
-- [ ] Tạo project PHP.
-- [ ] Tạo cấu trúc thư mục dự án.
-- [ ] Xây dựng Header và Navigation.
-- [ ] Xây dựng trang chủ bằng PHP.
-- [ ] Tạo khu vực phim đang chiếu.
-- [ ] Tạo khu vực phim sắp chiếu.
-- [ ] Xây dựng Footer.
-- [ ] Thiết kế giao diện bằng CSS.
-
-### Giai đoạn 2 — Database & PHP cơ bản
-
-- [ ] Thiết kế cơ sở dữ liệu MySQL.
-- [ ] Tạo database và các bảng.
-- [ ] Kết nối PHP với MySQL.
-- [ ] Hiển thị danh sách phim từ database.
-- [ ] Hiển thị thông tin chi tiết phim.
-- [ ] Xây dựng chức năng thêm, sửa, xóa phim cơ bản.
-
-### Giai đoạn 3 — Người dùng & Đặt vé
-
-- [ ] Đăng ký tài khoản.
-- [ ] Đăng nhập và đăng xuất.
-- [ ] Quản lý thông tin tài khoản.
-- [ ] Hiển thị danh sách rạp.
-- [ ] Hiển thị lịch chiếu.
-- [ ] Chọn suất chiếu.
-- [ ] Chọn ghế.
-- [ ] Đặt vé.
-- [ ] Lưu thông tin đặt vé vào database.
-- [ ] Xem lịch sử đặt vé.
-
-### Giai đoạn 4 — Quản trị & Hoàn thiện
-
-- [ ] Xây dựng trang quản trị.
-- [ ] Quản lý phim.
-- [ ] Quản lý rạp và phòng chiếu.
-- [ ] Quản lý lịch chiếu.
-- [ ] Quản lý đơn đặt vé.
-- [ ] Tích hợp thanh toán hoặc mô phỏng thanh toán.
-- [ ] Kiểm thử hệ thống.
-- [ ] Deploy website.
-- [ ] Viết tài liệu dự án.
-
-### Giai đoạn 5 — Định hướng Android
-
-- [ ] Xây dựng ứng dụng Android.
-- [ ] Xây dựng API phục vụ ứng dụng.
-- [ ] Kết nối Android với backend.
-- [ ] Đồng bộ dữ liệu người dùng và đặt vé.
-- [ ] Kiểm thử trên thiết bị Android.
+The database design will be developed with relational constraints to maintain data consistency and reduce duplicate data.
 
 ---
 
-## 🌿 Quy tắc làm việc với Git
+## 🔐 Security Considerations
 
-### Branch chính
+The project will gradually implement the following security practices:
 
-- `main`: Phiên bản ổn định của dự án.
+- Password hashing instead of storing plain-text passwords
+- Server-side input validation
+- Prepared statements for database queries
+- Session-based authentication
+- Role-based authorization
+- Protection against unauthorized access
+- Protection against SQL injection
+- Output escaping to reduce XSS risks
+- Secure handling of booking and payment information
+- HTTPS deployment
+- Separation of configuration files and sensitive credentials
 
-### Branch phát triển
+Sensitive information such as database passwords and environment configuration must not be committed directly to a public GitHub repository.
 
-Mỗi thành viên làm việc trên branch riêng:
+---
 
-- `feature/hung-php-structure`
-- `feature/thanh-frontend-ui`
+## 🚀 Development Roadmap
 
-Khi phát triển tính năng mới, tạo branch theo quy ước:
+### Phase 1: Project Planning and UI/UX Design
+
+- Define project requirements
+- Identify user roles
+- Design the website interface
+- Design Client, Staff, and Admin flows
+- Create the initial UI/UX system using Stitch and/or Figma
+- Define the website structure
+
+### Phase 2: Frontend Development
+
+- Convert the approved design into HTML and CSS
+- Build the homepage
+- Build the movie listing page
+- Build the movie detail page
+- Build the showtimes page
+- Build reusable components
+- Add responsive layouts
+- Add basic JavaScript interactions
+
+### Phase 3: Backend and Database Development
+
+- Set up the PHP project structure
+- Design the MySQL database
+- Create database tables
+- Establish the database connection
+- Build movie and showtime data retrieval
+- Implement CRUD operations
+- Build backend validation
+
+### Phase 4: Authentication and Authorization
+
+- Implement registration
+- Implement login and logout
+- Implement password hashing
+- Implement sessions
+- Implement Client, Staff, and Admin roles
+- Restrict access based on account permissions
+
+### Phase 5: Booking System
+
+- Display available showtimes
+- Display cinema rooms and seats
+- Implement seat selection
+- Check seat availability
+- Create booking records
+- Generate booking codes
+- Display booking confirmation
+- Build booking history
+- Implement ticket validation
+
+### Phase 6: Admin and Staff Management
+
+- Build Admin dashboard
+- Build Staff dashboard
+- Manage movies
+- Manage cinemas and rooms
+- Manage seats
+- Manage showtimes
+- Manage bookings
+- Manage users and staff
+- Add reports and system statistics
+
+### Phase 7: Testing and Deployment
+
+- Test frontend responsiveness
+- Test authentication and authorization
+- Test booking workflows
+- Test database operations
+- Test invalid input and error handling
+- Optimize website performance
+- Deploy the website to a PHP-compatible hosting environment
+- Configure the online database
+- Configure HTTPS and domain
+- Test access from different devices and networks
+
+---
+
+## 🌐 Deployment Plan
+
+The project is intended to be deployed as a public website.
+
+The expected deployment process is:
 
 ```text
-feature/ten-tinh-nang
-fix/ten-loi
-refactor/ten-thay-doi
+Develop locally
+      ↓
+Test the application
+      ↓
+Push source code to GitHub
+      ↓
+Prepare PHP-compatible hosting
+      ↓
+Create an online MySQL database
+      ↓
+Upload or deploy the project
+      ↓
+Configure database credentials
+      ↓
+Configure domain and HTTPS
+      ↓
+Test the public website
 ```
 
-### Quy trình làm việc
+After deployment, users will be able to access the website through a public URL without installing PHP, MySQL, or a local development environment on their own computers.
+
+---
+
+## 👥 Team Members
+
+| Member | Role | Main Responsibilities |
+|--------|------|------------------------|
+| Nguyễn Lâm Hữu Hùng | Backend Developer | PHP backend, project structure, database integration, authentication, system functionality |
+| Nguyễn Vũ Đăng Thành | UI/UX & Frontend Developer | UI/UX implementation, HTML, CSS, responsive design, sample data, visual consistency |
+| Tạ Minh Đức | Frontend & Feature Developer | JavaScript interactions, frontend features, booking interface, testing, and documentation |
+
+All members participate in:
+
+- Requirement analysis
+- Git and GitHub collaboration
+- Code review
+- Debugging
+- Testing
+- Documentation
+- Project planning
+
+---
+
+## 🌿 Git and GitHub Workflow
+
+To reduce conflicts and maintain a clean development history, the team follows this workflow:
+
+1. Pull the latest changes from the `main` branch.
+2. Create a separate branch for each feature or task.
+3. Implement and test the feature.
+4. Commit meaningful changes.
+5. Push the feature branch to GitHub.
+6. Create a Pull Request.
+7. Review the changes.
+8. Merge the Pull Request into `main`.
+
+### Branch Naming Convention
 
 ```text
-Tạo branch
-    ↓
-Code và kiểm tra trên máy
-    ↓
-Commit
-    ↓
-Push lên GitHub
-    ↓
-Tạo Pull Request
-    ↓
-Thành viên còn lại review
-    ↓
-Merge vào main
+feature/feature-name
+fix/issue-name
+docs/documentation-name
+refactor/refactor-name
 ```
 
-### Quy định commit
+### Example
 
-- Mỗi thành viên tối thiểu **3 commit có ý nghĩa mỗi tuần**.
-- Không commit trực tiếp vào `main`.
-- Mỗi commit nên tập trung vào một thay đổi cụ thể.
-- Không commit các file không cần thiết như `vendor`, file tạm hoặc thông tin bí mật.
-- Không đưa mật khẩu database thật lên GitHub.
+```bash
+git checkout main
+git pull origin main
 
-Ví dụ:
+git checkout -b feature/movie-list
+
+git add .
+git commit -m "feat: create movie listing page"
+
+git push -u origin feature/movie-list
+```
+
+### Commit Message Convention
 
 ```text
-feat: create PHP project structure
-
-feat: add cinema navigation
-
-style: add base cinema theme
-
-feat: connect PHP to MySQL
-
-feat: display movie list
-
-fix: correct booking form validation
-
-docs: update project README
+feat: add a new feature
+fix: fix a bug
+docs: update documentation
+style: update styling
+refactor: improve code structure
+test: add or update tests
+chore: update project configuration
 ```
 
 ---
 
-## 📅 Thời gian phát triển
+## 📅 Development Schedule
 
-Nhóm dành **2 ngày mỗi tuần** để học và phát triển dự án.
+The team plans to work on the project approximately two days per week.
 
-Mỗi tuần sẽ:
+Each member aims to contribute at least three meaningful commits per week, depending on the current development stage and workload.
 
-- Thống nhất task.
-- Phân công người thực hiện.
-- Cập nhật tiến độ.
-- Commit và push code.
-- Review Pull Request.
-- Tổng kết kết quả cuối tuần.
+The schedule may be adjusted based on:
 
----
-
-## 📄 Trạng thái dự án
-
-🚧 Dự án đang trong giai đoạn khởi tạo và xây dựng nền tảng PHP.
+- Project requirements
+- Academic deadlines
+- Feature complexity
+- Team availability
+- Testing and debugging progress
 
 ---
 
-## 📜 License
+## 📌 Current Status
 
-Dự án được xây dựng cho mục đích học tập, thực hành và phát triển portfolio cá nhân.
+**Project status:** In development
+
+Current progress:
+
+- [x] Project idea defined
+- [x] Project repository created
+- [x] Git and GitHub initialized
+- [x] Initial README created
+- [x] Initial UI/UX concept designed
+- [x] Home page design prepared
+- [x] Movie listing page design prepared
+- [x] Movie detail page design prepared
+- [x] Showtimes page design prepared
+- [ ] Frontend implementation
+- [ ] Database design
+- [ ] PHP backend implementation
+- [ ] Authentication and authorization
+- [ ] Booking system
+- [ ] Admin dashboard
+- [ ] Staff dashboard
+- [ ] Testing
+- [ ] Public deployment
+
+---
+
+## 📄 License
+
+This project is developed for educational, portfolio, and experimental purposes.
+
+All movie titles, posters, logos, images, and other media used during development are for demonstration purposes only unless otherwise stated.

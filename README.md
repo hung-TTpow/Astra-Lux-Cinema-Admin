@@ -1,20 +1,24 @@
 # 🎬 Astra Lux Cinema
 
-Astra Lux Cinema is a modern online cinema booking platform designed to provide users with a convenient and intuitive experience for discovering movies, viewing showtimes, selecting seats, and booking cinema tickets online.
+A modern online cinema ticket booking website developed as a collaborative learning project.
 
-The project is developed as a practical learning project and portfolio product, with a focus on web development, database management, user experience, teamwork, and real-world software development practices.
+Astra Lux Cinema aims to provide users with a convenient and intuitive platform to discover movies, view showtimes, select seats, and book cinema tickets online.
+
+The project is developed by a student team to strengthen practical skills in frontend development, backend programming, database design, Git/GitHub collaboration, and software project organization.
 
 ---
 
-## 🌌 Project Overview
+## 📌 Project Introduction
 
-Astra Lux Cinema aims to simulate a complete cinema booking ecosystem with three main types of users:
+Astra Lux Cinema is an online cinema management and ticket booking system.
 
-- **Client:** Browse movies, view showtimes, select seats, and book tickets.
-- **Staff:** Manage bookings, validate tickets, check customer information, and monitor showtimes.
-- **Admin:** Manage movies, cinemas, rooms, seats, showtimes, users, staff, promotions, and system reports.
+The website is designed with a modern, elegant, and cinematic visual style. It will support different types of users, including customers, staff, and administrators.
 
-The platform is designed with a premium, cinematic, and futuristic visual identity inspired by modern cinema websites.
+Customers can browse movies, view movie details, check showtimes, select seats, and make ticket bookings.
+
+Staff members can manage screenings, monitor bookings, and support cinema operations.
+
+Administrators can manage users, movies, cinemas, showtimes, bookings, and system data.
 
 ---
 
@@ -22,21 +26,20 @@ The platform is designed with a premium, cinematic, and futuristic visual identi
 
 The main objectives of this project are:
 
-1. Build a functional online cinema ticket booking website.
-2. Convert a professional UI/UX design into a working web application.
-3. Practice frontend development using HTML, CSS, and JavaScript.
-4. Learn backend development with PHP.
-5. Design and manage a relational database using MySQL.
-6. Implement user authentication and role-based authorization.
-7. Develop movie, cinema, room, seat, showtime, and booking management features.
-8. Practice Git and GitHub collaboration in a team environment.
-9. Learn the software development process through a real-world project.
-10. Build a project that can be deployed online and presented in a CV or portfolio.
-11. Develop a foundation for future mobile application development.
+- Build a functional online cinema ticket booking website.
+- Practice frontend development using HTML, CSS, and JavaScript.
+- Learn backend development using PHP.
+- Design and integrate a MySQL database.
+- Understand client-server communication.
+- Practice Git and GitHub collaboration.
+- Learn how to organize a software project using branches.
+- Improve teamwork, code review, debugging, and testing skills.
+- Create a practical project for learning, portfolio, and future career development.
+- Prepare the project for future expansion into a mobile application.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies and Tools
 
 ### Frontend
 
@@ -44,471 +47,785 @@ The main objectives of this project are:
 - CSS3
 - JavaScript
 - Responsive Web Design
-- Figma / Stitch for UI/UX design reference
 
 ### Backend
 
 - PHP
-- PHP Sessions
-- PHP REST-style endpoints when necessary
-- Server-side validation
-- Role-based access control
+- PHP REST-style endpoints
 
 ### Database
 
 - MySQL
-- Relational database design
-- SQL
-- Database normalization
-- Foreign keys and relational constraints
 
 ### Development Tools
 
 - Visual Studio Code
 - Git
 - GitHub
-- Web browser
-- PHP built-in development server
+- Figma
+- Stitch
+- Browser Developer Tools
 
-### Deployment
+### Planned Deployment
 
-- PHP-compatible web hosting or cloud server
+The project is planned to be deployed online using a hosting environment that supports:
+
+- PHP
+- MySQL
 - Apache or Nginx
-- MySQL-compatible database
-- HTTPS/SSL
-- Custom domain or hosting subdomain
+- HTTPS
+- Custom domain
 
-> The project is designed to be deployable on a public hosting environment so that users can access the website through a URL without running the development environment on their own computers.
+The project is not dependent on XAMPP for production deployment.
 
----
-
-## ✨ Main Features
-
-### Client Features
-
-- View the homepage
-- Browse currently showing movies
-- Browse coming-soon movies
-- Search and filter movies
-- View movie details
-- View movie synopsis, genre, duration, cast, and trailer
-- View cinemas and showtimes
-- Select cinema and showtime
-- Select available seats
-- Review booking information
-- Simulate or process ticket payment
-- Receive booking confirmation
-- View electronic ticket
-- View booking history
-- Manage personal profile
-- Manage saved movies or watchlist
-- View membership information or loyalty points
-- Log in, register, and log out
-
-### Staff Features
-
-- Staff dashboard
-- View daily booking statistics
-- Search bookings by booking code, customer name, phone number, or email
-- View booking details
-- Validate booking tickets
-- Check in customers
-- Verify ticket status
-- View movie and showtime information
-- Monitor cinema room occupancy
-- View staff profile
-- Manage account settings
-- Log out
-
-### Admin Features
-
-- Admin dashboard
-- View revenue statistics
-- View booking statistics
-- View ticket sales
-- View registered users
-- Manage movies
-- Manage movie genres
-- Manage cinemas
-- Manage cinema rooms
-- Manage seats
-- Manage showtimes
-- Manage bookings
-- Manage clients
-- Manage staff accounts
-- Manage promotions
-- View revenue reports
-- Manage system settings
-- Manage administrator profile
-- Log out
+XAMPP or another local PHP environment may be used for local development if necessary.
 
 ---
 
-## 🧩 System Roles
+## ✨ Planned Features
 
-| Role | Main Responsibilities |
-|------|------------------------|
-| Client | Browse movies, select showtimes, select seats, and book tickets |
-| Staff | Validate bookings, check in customers, and monitor showtimes |
-| Admin | Manage the entire cinema booking system |
+### 👤 Customer Features
 
-The system will implement role-based authorization to ensure that each account can only access features permitted for its role.
+- Register an account.
+- Log in and log out.
+- View the homepage.
+- Browse currently showing movies.
+- Browse coming soon movies.
+- Search for movies.
+- Filter movies by genre or category.
+- View movie details.
+- View movie trailers.
+- View cinema information.
+- View available showtimes.
+- Select a cinema.
+- Select a date and showtime.
+- Select available seats.
+- Review booking information.
+- Book cinema tickets.
+- View booking history.
+- View booking details.
+- Cancel bookings according to system rules.
+- Receive booking confirmation.
+- Manage personal profile.
+- Submit movie ratings after watching.
+
+### 🎞️ Movie Features
+
+- Display now showing movies.
+- Display coming soon movies.
+- Display movie posters.
+- Display movie titles.
+- Display movie descriptions.
+- Display genres.
+- Display duration.
+- Display release dates.
+- Display age ratings.
+- Display trailers.
+- Display movie details.
+- Display available showtimes.
+
+### 🎟️ Booking Features
+
+- Select cinema.
+- Select movie.
+- Select date.
+- Select showtime.
+- Display seat layout.
+- Display available seats.
+- Display reserved seats.
+- Select seats.
+- Calculate ticket price.
+- Display booking summary.
+- Confirm booking.
+- Store booking information.
+- Display booking history.
+
+### 🧑‍💼 Staff Features
+
+- Staff login.
+- View booking information.
+- Manage movie schedules.
+- Manage showtimes.
+- Monitor seat availability.
+- Check booking status.
+- Support customer booking operations.
+- Update selected cinema information.
+
+### 🛡️ Administrator Features
+
+- Administrator login.
+- Manage user accounts.
+- Manage customer accounts.
+- Manage staff accounts.
+- Manage movies.
+- Manage genres.
+- Manage cinemas.
+- Manage screening rooms.
+- Manage showtimes.
+- Manage seat layouts.
+- Manage bookings.
+- View system statistics.
+- Manage website content.
+- Manage user roles and permissions.
 
 ---
 
-## 🗂️ Planned Project Structure
+## 🏗️ Planned Project Structure
+
+The project structure may evolve during development.
 
 ```text
 Astra-Lux-Cinema/
 │
-├── index.php
+├── index.html
 ├── README.md
+├── .hintrc
 │
 ├── assets/
 │   ├── css/
 │   │   ├── style.css
-│   │   ├── components.css
-│   │   └── responsive.css
+│   │   ├── home.css
+│   │   └── movie-pages.css
 │   │
 │   ├── js/
 │   │   ├── main.js
 │   │   ├── movies.js
-│   │   ├── booking.js
-│   │   └── seats.js
+│   │   ├── showtimes.js
+│   │   └── booking.js
 │   │
 │   └── images/
+│       ├── home/
+│       ├── movies/
+│       ├── banners/
+│       └── icons/
 │
-├── config/
-│   └── database.php
+├── pages/
+│   ├── home/
+│   ├── movies/
+│   ├── movie-details/
+│   ├── showtimes/
+│   ├── booking/
+│   ├── login/
+│   ├── register/
+│   └── profile/
 │
-├── includes/
-│   ├── header.php
-│   ├── footer.php
-│   ├── navbar.php
-│   └── auth.php
-│
-├── auth/
-│   ├── login.php
-│   ├── register.php
-│   ├── logout.php
-│   └── forgot-password.php
-│
-├── client/
-│   ├── index.php
-│   ├── movies.php
-│   ├── movie-detail.php
-│   ├── showtimes.php
-│   ├── seats.php
-│   ├── booking-confirmation.php
-│   ├── payment.php
-│   ├── e-ticket.php
-│   ├── booking-history.php
-│   └── profile.php
-│
-├── staff/
-│   ├── dashboard.php
-│   ├── bookings.php
-│   ├── booking-detail.php
-│   ├── check-in.php
-│   ├── showtimes.php
-│   └── profile.php
-│
-├── admin/
-│   ├── dashboard.php
-│   ├── movies.php
-│   ├── genres.php
-│   ├── cinemas.php
-│   ├── rooms.php
-│   ├── seats.php
-│   ├── showtimes.php
-│   ├── bookings.php
-│   ├── users.php
-│   ├── staff.php
-│   ├── promotions.php
-│   ├── reports.php
-│   └── settings.php
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── services/
 │
 ├── database/
-│   └── astra_lux_cinema.sql
+│   ├── schema.sql
+│   └── seed.sql
 │
-└── docs/
-    ├── system-design.md
-    ├── database-design.md
-    └── api-documentation.md
+└── admin/
+    ├── dashboard/
+    ├── movies/
+    ├── cinemas/
+    ├── showtimes/
+    └── bookings/
 ```
 
-> The structure may be adjusted during development according to the project's requirements and implementation progress.
+> Note: The current repository contains the initial frontend foundation. Additional folders and files will be added during development.
 
 ---
 
 ## 🗄️ Planned Database Entities
 
-The database is expected to include the following main entities:
+The database may contain the following main entities:
 
 - Users
 - Roles
 - Movies
 - Genres
+- Movie Genres
 - Cinemas
-- Rooms
+- Screening Rooms
 - Seats
 - Showtimes
 - Bookings
 - Booking Details
 - Payments
-- Promotions
 - Reviews
+- Promotions
 - Notifications
 
-The database design will be developed with relational constraints to maintain data consistency and reduce duplicate data.
+### Basic Relationship Overview
+
+```text
+User
+ └── Booking
+      └── Booking Details
+           └── Showtime
+                ├── Movie
+                └── Screening Room
+                     └── Cinema
+
+Movie
+ └── Movie Genres
+      └── Genre
+
+User
+ └── Review
+      └── Movie
+```
+
+The final database structure will be refined based on actual system requirements.
 
 ---
 
 ## 🔐 Security Considerations
 
-The project will gradually implement the following security practices:
+The project will consider the following security practices:
 
-- Password hashing instead of storing plain-text passwords
-- Server-side input validation
-- Prepared statements for database queries
-- Session-based authentication
-- Role-based authorization
-- Protection against unauthorized access
-- Protection against SQL injection
-- Output escaping to reduce XSS risks
-- Secure handling of booking and payment information
-- HTTPS deployment
-- Separation of configuration files and sensitive credentials
-
-Sensitive information such as database passwords and environment configuration must not be committed directly to a public GitHub repository.
-
----
-
-## 🚀 Development Roadmap
-
-### Phase 1: Project Planning and UI/UX Design
-
-- Define project requirements
-- Identify user roles
-- Design the website interface
-- Design Client, Staff, and Admin flows
-- Create the initial UI/UX system using Stitch and/or Figma
-- Define the website structure
-
-### Phase 2: Frontend Development
-
-- Convert the approved design into HTML and CSS
-- Build the homepage
-- Build the movie listing page
-- Build the movie detail page
-- Build the showtimes page
-- Build reusable components
-- Add responsive layouts
-- Add basic JavaScript interactions
-
-### Phase 3: Backend and Database Development
-
-- Set up the PHP project structure
-- Design the MySQL database
-- Create database tables
-- Establish the database connection
-- Build movie and showtime data retrieval
-- Implement CRUD operations
-- Build backend validation
-
-### Phase 4: Authentication and Authorization
-
-- Implement registration
-- Implement login and logout
-- Implement password hashing
-- Implement sessions
-- Implement Client, Staff, and Admin roles
-- Restrict access based on account permissions
-
-### Phase 5: Booking System
-
-- Display available showtimes
-- Display cinema rooms and seats
-- Implement seat selection
-- Check seat availability
-- Create booking records
-- Generate booking codes
-- Display booking confirmation
-- Build booking history
-- Implement ticket validation
-
-### Phase 6: Admin and Staff Management
-
-- Build Admin dashboard
-- Build Staff dashboard
-- Manage movies
-- Manage cinemas and rooms
-- Manage seats
-- Manage showtimes
-- Manage bookings
-- Manage users and staff
-- Add reports and system statistics
-
-### Phase 7: Testing and Deployment
-
-- Test frontend responsiveness
-- Test authentication and authorization
-- Test booking workflows
-- Test database operations
-- Test invalid input and error handling
-- Optimize website performance
-- Deploy the website to a PHP-compatible hosting environment
-- Configure the online database
-- Configure HTTPS and domain
-- Test access from different devices and networks
-
----
-
-## 🌐 Deployment Plan
-
-The project is intended to be deployed as a public website.
-
-The expected deployment process is:
-
-```text
-Develop locally
-      ↓
-Test the application
-      ↓
-Push source code to GitHub
-      ↓
-Prepare PHP-compatible hosting
-      ↓
-Create an online MySQL database
-      ↓
-Upload or deploy the project
-      ↓
-Configure database credentials
-      ↓
-Configure domain and HTTPS
-      ↓
-Test the public website
-```
-
-After deployment, users will be able to access the website through a public URL without installing PHP, MySQL, or a local development environment on their own computers.
+- Passwords should be hashed before storage.
+- User input should be validated.
+- SQL injection should be prevented using prepared statements.
+- Authentication should be required for protected functions.
+- Authorization should be applied according to user roles.
+- Sensitive information should not be exposed to the frontend.
+- Session or token-based authentication should be handled securely.
+- Booking requests should be validated on the server.
+- Seat booking should prevent duplicate reservations.
+- Important actions should be checked on the backend.
+- HTTPS should be used when deploying the website online.
 
 ---
 
 ## 👥 Team Members
 
 | Member | Role | Main Responsibilities |
-|--------|------|------------------------|
-| Nguyễn Lâm Hữu Hùng | Backend Developer | PHP backend, project structure, database integration, authentication, system functionality |
-| Nguyễn Vũ Đăng Thành | UI/UX & Frontend Developer | UI/UX implementation, HTML, CSS, responsive design, sample data, visual consistency |
-| Tạ Minh Đức | Frontend & Feature Developer | JavaScript interactions, frontend features, booking interface, testing, and documentation |
+|---|---|---|
+| Nguyễn Lâm Hữu Hùng | Backend Developer & Project Integrator | PHP backend, project structure, database integration, authentication, system functionality |
+| Nguyễn Vũ Đăng Thành | UI/UX & Frontend Developer | UI/UX implementation, HTML, CSS, responsive design, homepage, sample data |
+| Tạ Minh Đức | Frontend & Feature Developer | JavaScript interactions, frontend features, movie pages, booking interface, testing, documentation |
 
-All members participate in:
+### All Members Participate In
 
 - Requirement analysis
+- Project planning
+- UI/UX discussion
 - Git and GitHub collaboration
 - Code review
 - Debugging
 - Testing
 - Documentation
-- Project planning
+- Feature development
+- Project presentation
 
 ---
 
-## 🌿 Git and GitHub Workflow
+## 🌿 Development Branches and Task Assignments
 
-To reduce conflicts and maintain a clean development history, the team follows this workflow:
+Each team member works on a separate Git branch to reduce conflicts and make collaboration easier.
 
-1. Pull the latest changes from the `main` branch.
-2. Create a separate branch for each feature or task.
-3. Implement and test the feature.
-4. Commit meaningful changes.
-5. Push the feature branch to GitHub.
-6. Create a Pull Request.
-7. Review the changes.
-8. Merge the Pull Request into `main`.
+| Member | Branch | Main Task |
+|---|---|---|
+| Nguyễn Lâm Hữu Hùng | `feature/frontend-foundation` | Project structure, shared frontend foundation, PHP backend, database integration |
+| Nguyễn Vũ Đăng Thành | `feature/homepage-ui` | Homepage interface, responsive layout, header, hero banner, movie sections |
+| Tạ Minh Đức | `feature/movie-pages` | Movies page, movie details, showtimes, JavaScript interactions |
 
-### Branch Naming Convention
+### 1. Nguyễn Lâm Hữu Hùng
+
+**Branch:**
+
+```text
+feature/frontend-foundation
+```
+
+**Responsibilities:**
+
+- Set up the basic project structure.
+- Create and maintain shared frontend files.
+- Build the initial HTML, CSS, and JavaScript foundation.
+- Develop reusable layout components.
+- Develop PHP backend functionality.
+- Design and integrate the MySQL database.
+- Implement authentication and authorization.
+- Integrate frontend pages with backend functionality.
+- Maintain project structure and coding conventions.
+- Review and merge pull requests when necessary.
+- Coordinate integration between team members.
+
+**Main Working Areas:**
+
+```text
+index.html
+assets/css/
+assets/js/
+backend/
+database/
+config/
+```
+
+---
+
+### 2. Nguyễn Vũ Đăng Thành
+
+**Branch:**
+
+```text
+feature/homepage-ui
+```
+
+**Responsibilities:**
+
+- Develop the homepage interface.
+- Implement the header and navigation bar.
+- Build the hero banner section.
+- Create the Now Showing movie section.
+- Create the Coming Soon movie section.
+- Implement the footer.
+- Ensure responsive design for desktop, tablet, and mobile.
+- Maintain visual consistency with the Figma/Stitch design.
+- Prepare sample movie data for the homepage.
+- Improve typography, spacing, colors, and visual presentation.
+
+**Main Working Areas:**
+
+```text
+pages/home/
+assets/images/home/
+assets/css/home.css
+```
+
+---
+
+### 3. Tạ Minh Đức
+
+**Branch:**
+
+```text
+feature/movie-pages
+```
+
+**Responsibilities:**
+
+- Develop the Movies page.
+- Develop the Movie Details page.
+- Develop the Showtimes page.
+- Implement movie filtering and searching interactions.
+- Implement JavaScript interactions for movie pages.
+- Display movie information and showtime data.
+- Build the initial booking interface.
+- Test page navigation and frontend functionality.
+- Improve user interaction and usability.
+- Write documentation for implemented features.
+
+**Main Working Areas:**
+
+```text
+pages/movies/
+pages/movie-details/
+pages/showtimes/
+assets/js/movies.js
+assets/js/showtimes.js
+assets/css/movie-pages.css
+```
+
+> Note: File locations may be adjusted as the project structure evolves. Team members should communicate before modifying shared files such as `index.html`, global CSS files, or common JavaScript files.
+
+---
+
+## 🌱 Git Branch Naming Rules
+
+The project uses separate branches for different features and responsibilities.
+
+### Main Branch
+
+```text
+main
+```
+
+The `main` branch contains the integrated and relatively stable version of the project.
+
+### Feature Branches
+
+```text
+feature/frontend-foundation
+feature/homepage-ui
+feature/movie-pages
+```
+
+### Documentation Branches
+
+```text
+docs/team-branch-assignments
+docs/update-readme
+```
+
+### General Naming Convention
 
 ```text
 feature/feature-name
-fix/issue-name
+fix/bug-name
 docs/documentation-name
 refactor/refactor-name
+test/test-name
 ```
 
-### Example
+---
+
+## 🔄 Git and GitHub Collaboration Workflow
+
+All members should follow the workflow below.
+
+### Step 1: Update the Main Branch
+
+Before starting new work:
 
 ```bash
 git checkout main
 git pull origin main
+```
 
-git checkout -b feature/movie-list
+### Step 2: Create or Switch to Your Feature Branch
 
+Example for Thành:
+
+```bash
+git checkout -b feature/homepage-ui
+```
+
+Example for Đức:
+
+```bash
+git checkout -b feature/movie-pages
+```
+
+If the branch already exists locally:
+
+```bash
+git checkout feature/homepage-ui
+```
+
+or:
+
+```bash
+git checkout feature/movie-pages
+```
+
+### Step 3: Check the Current Status
+
+```bash
+git status
+```
+
+### Step 4: Work on Your Assigned Feature
+
+Develop and test your assigned functionality.
+
+Avoid modifying the same files as other members without discussion.
+
+### Step 5: Add Changes
+
+Add a specific file:
+
+```bash
+git add index.html
+```
+
+Add a folder:
+
+```bash
+git add assets/
+```
+
+Add all changed files:
+
+```bash
 git add .
-git commit -m "feat: create movie listing page"
-
-git push -u origin feature/movie-list
 ```
 
-### Commit Message Convention
+### Step 6: Commit Changes
 
-```text
-feat: add a new feature
-fix: fix a bug
-docs: update documentation
-style: update styling
-refactor: improve code structure
-test: add or update tests
-chore: update project configuration
+Use a clear and meaningful commit message:
+
+```bash
+git commit -m "feat: add homepage hero section"
 ```
+
+Other examples:
+
+```bash
+git commit -m "feat: add movie listing page"
+```
+
+```bash
+git commit -m "fix: correct responsive layout"
+```
+
+```bash
+git commit -m "docs: update project documentation"
+```
+
+### Step 7: Push Your Branch
+
+For Thành:
+
+```bash
+git push -u origin feature/homepage-ui
+```
+
+For Đức:
+
+```bash
+git push -u origin feature/movie-pages
+```
+
+For Hùng:
+
+```bash
+git push -u origin feature/frontend-foundation
+```
+
+### Step 8: Create a Pull Request
+
+On GitHub:
+
+1. Open the repository.
+2. Select your pushed branch.
+3. Click **Compare & pull request**.
+4. Set the base branch to `main`.
+5. Review the changed files.
+6. Write a clear pull request title and description.
+7. Create the Pull Request.
+8. Ask another member to review the changes.
+9. Merge after checking the code and resolving conflicts.
 
 ---
 
-## 📅 Development Schedule
+## ⚠️ Collaboration Rules
 
-The team plans to work on the project approximately two days per week.
+To keep the project organized, all members should follow these rules:
 
-Each member aims to contribute at least three meaningful commits per week, depending on the current development stage and workload.
-
-The schedule may be adjusted based on:
-
-- Project requirements
-- Academic deadlines
-- Feature complexity
-- Team availability
-- Testing and debugging progress
+- Do not code directly on the `main` branch.
+- Always create or use your assigned feature branch.
+- Pull the latest `main` before starting new work.
+- Use meaningful commit messages.
+- Do not force push unless the team agrees.
+- Do not delete another member's work without discussion.
+- Avoid editing the same shared files at the same time.
+- Test your changes before creating a Pull Request.
+- Review the changed files before committing.
+- Communicate before changing the project structure.
+- Resolve conflicts carefully.
+- Keep commits focused on one feature or task.
+- Do not upload passwords, API keys, or sensitive information.
+- Do not commit unnecessary generated files.
+- Keep the README updated when the project structure changes.
 
 ---
 
-## 📌 Current Status
+## 📋 Current Development Status
 
-**Project status:** In development
+### Completed
 
-Current progress:
+- [x] Create GitHub repository.
+- [x] Initialize local Git repository.
+- [x] Connect local repository to GitHub.
+- [x] Create initial project structure.
+- [x] Add basic `index.html`.
+- [x] Add `assets/css/style.css`.
+- [x] Add `assets/js/main.js`.
+- [x] Create frontend foundation branch.
+- [x] Merge frontend foundation into `main`.
+- [x] Define team members and responsibilities.
+- [x] Define branch assignments.
+- [x] Define Git and GitHub collaboration workflow.
+- [x] Create initial design direction using Figma/Stitch.
 
-- [x] Project idea defined
-- [x] Project repository created
-- [x] Git and GitHub initialized
-- [x] Initial README created
-- [x] Initial UI/UX concept designed
-- [x] Home page design prepared
-- [x] Movie listing page design prepared
-- [x] Movie detail page design prepared
-- [x] Showtimes page design prepared
-- [ ] Frontend implementation
-- [ ] Database design
-- [ ] PHP backend implementation
-- [ ] Authentication and authorization
-- [ ] Booking system
-- [ ] Admin dashboard
-- [ ] Staff dashboard
-- [ ] Testing
-- [ ] Public deployment
+### In Progress
+
+- [ ] Build homepage interface.
+- [ ] Build Movies page.
+- [ ] Build Movie Details page.
+- [ ] Build Showtimes page.
+- [ ] Improve responsive design.
+- [ ] Create reusable frontend components.
+- [ ] Prepare sample movie data.
+
+### Planned
+
+- [ ] Design MySQL database.
+- [ ] Create PHP backend structure.
+- [ ] Implement user registration and login.
+- [ ] Implement movie management.
+- [ ] Implement cinema management.
+- [ ] Implement showtime management.
+- [ ] Implement seat selection.
+- [ ] Implement booking functionality.
+- [ ] Implement booking history.
+- [ ] Implement staff features.
+- [ ] Implement administrator features.
+- [ ] Add security validation.
+- [ ] Test the complete system.
+- [ ] Deploy the website online.
+- [ ] Prepare project documentation and presentation.
+
+---
+
+## 🗓️ Suggested Development Roadmap
+
+### Phase 1: Planning and Foundation
+
+- Analyze requirements.
+- Define system roles.
+- Design the project structure.
+- Create the GitHub repository.
+- Set up branches.
+- Create the basic frontend foundation.
+
+### Phase 2: Frontend Development
+
+- Build the homepage.
+- Build the Movies page.
+- Build the Movie Details page.
+- Build the Showtimes page.
+- Build the booking interface.
+- Implement responsive design.
+
+### Phase 3: Backend and Database
+
+- Design the database.
+- Create MySQL tables.
+- Build PHP configuration.
+- Build backend routes.
+- Implement authentication.
+- Implement movie and showtime APIs.
+- Connect frontend to backend.
+
+### Phase 4: Booking System
+
+- Implement cinema selection.
+- Implement showtime selection.
+- Implement seat selection.
+- Implement booking creation.
+- Prevent duplicate seat reservations.
+- Display booking history.
+
+### Phase 5: Testing and Deployment
+
+- Test frontend pages.
+- Test backend APIs.
+- Test database operations.
+- Test authentication and authorization.
+- Test booking flow.
+- Fix bugs.
+- Deploy the website online.
+- Complete documentation and presentation.
+
+---
+
+## 🚀 Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/thanhnvd1101/Astra-Lux-Cinema.git
+```
+
+Move into the project directory:
+
+```bash
+cd Astra-Lux-Cinema
+```
+
+Open the project in Visual Studio Code:
+
+```bash
+code .
+```
+
+The initial frontend can be opened by running `index.html` in a browser.
+
+During backend development, a PHP-compatible local server will be required.
+
+---
+
+## 🌐 Deployment Plan
+
+The project is intended to be deployed on a hosting platform that supports PHP and MySQL.
+
+The planned deployment requirements include:
+
+- PHP-compatible hosting.
+- MySQL database.
+- Apache or Nginx web server.
+- HTTPS certificate.
+- Domain name.
+- Environment configuration.
+- Secure database credentials.
+- Production error handling.
+- Database backup strategy.
+
+The deployment configuration will be documented after the backend and database are completed.
+
+---
+
+## 📚 Learning Outcomes
+
+Through this project, team members aim to improve their understanding of:
+
+- HTML structure.
+- CSS layout and responsive design.
+- JavaScript programming.
+- DOM manipulation.
+- Frontend component organization.
+- PHP programming.
+- HTTP requests and responses.
+- REST-style API design.
+- MySQL database design.
+- CRUD operations.
+- Authentication and authorization.
+- Git branching and merging.
+- GitHub Pull Requests.
+- Team collaboration.
+- Debugging and testing.
+- Online deployment.
+
+---
+
+## 🔮 Future Improvements
+
+Possible future improvements include:
+
+- Online payment integration.
+- QR code ticket generation.
+- Email booking confirmation.
+- Movie recommendation system.
+- Advanced movie search.
+- Promotion and discount management.
+- Multiple cinema branches.
+- Real-time seat availability.
+- Dashboard statistics.
+- Mobile application using Android.
+- API integration with external movie databases.
+- Multi-language support.
+- Dark and light theme customization.
+
+---
+
+## 👨‍💻 Team
+
+### Nguyễn Lâm Hữu Hùng
+
+Backend development, project structure, database integration, and system integration.
+
+### Nguyễn Vũ Đăng Thành
+
+UI/UX design, homepage development, responsive interface, and visual consistency.
+
+### Tạ Minh Đức
+
+Frontend feature development, movie pages, JavaScript interactions, testing, and documentation.
 
 ---
 
 ## 📄 License
 
-This project is developed for educational, portfolio, and experimental purposes.
+This project is developed for educational, learning, portfolio, and academic purposes.
 
-All movie titles, posters, logos, images, and other media used during development are for demonstration purposes only unless otherwise stated.
+The project may be expanded or modified by the team during future development.

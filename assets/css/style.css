@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #d7a629;
+    color: #f4f1e8;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    
+}

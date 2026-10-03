@@ -138,6 +138,7 @@ body {
 .label-sm {
     font-family: var(--font-body);
     font-size: 9px;
+    font-weight: 700;
     line-height: 12px;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -177,7 +178,7 @@ body {
 }
 
 .btn-outline:hover {
-    background-color: rgba(214, 179, 106, 0,1);
+    background-color: rgba(214, 179, 106, 0.1);
 }
 
 .btn-surface {
@@ -187,7 +188,7 @@ body {
 }
 
 .btn-surface:hover {
-    border-color: var(--color-surface-highlight);
+    background-color: var(--color-surface-highlight);
 }
 
 .btn-ghost {
@@ -650,5 +651,22 @@ main > :last-child {
 /* Hide scrollbars (WebKit browsers) to match the original app-like feel */
 ::-webkit-scrollbar {
     display: none;
+}
+
+.form-group {
+    margin-bottom: var(--space-4);
+}
+
+section > h3 {
+    margin-bottom: var(--space-6);
+}
+
+.badge {
+    vertical-align: middle;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 

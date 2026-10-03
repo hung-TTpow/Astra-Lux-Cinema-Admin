@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="styles.css" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-surface":"#e4e1e7","surface-variant":"#353439","primary":"#f4ce83","surface-container-highest":"#353439","on-background":"#e4e1e7","tertiary":"#d4d2e0","on-primary-container":"#5d4403","surface-bright":"#39393d","outline":"#998f80","surface-dim":"#131317","secondary-container":"#494851","secondary-fixed-dim":"#c7c5d0","on-error":"#690005","on-secondary":"#303038","inverse-on-surface":"#303034","on-tertiary-fixed":"#1b1b25","surface":"#131317","primary-container":"#d6b36a","primary-fixed-dim":"#e6c277","on-tertiary":"#302f3a","on-secondary-fixed":"#1b1b23","surface-container":"#1f1f23","primary-fixed":"#ffdf9f","surface-container-low":"#1b1b1f","error":"#ffb4ab","tertiary-container":"#b8b6c4","on-secondary-container":"#b9b7c2","surface-tint":"#e6c277","outline-variant":"#4d4639","secondary-fixed":"#e4e1ed","on-surface-variant":"#d0c5b4","inverse-primary":"#755a1a","background":"#131317","on-primary-fixed-variant":"#5b4302","on-error-container":"#ffdad6","on-tertiary-container":"#484753","error-container":"#93000a","secondary":"#c7c5d0","on-primary":"#402d00","on-secondary-fixed-variant":"#46464f","on-surface":"#e4e1e7","on-primary-fixed":"#261a00","surface-container-lowest":"#0e0e12","tertiary-fixed-dim":"#c7c5d3","on-tertiary-fixed-variant":"#464651","tertiary-fixed":"#e3e1ef","surface-container-high":"#2a292e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-lg":"2.5rem","space-md":"1.5rem","space-xl":"4rem","space-sm":"0.75rem","space-xs":"0.375rem","margin":"2rem","gutter":"1.5rem"},"fontFamily":{"label-lg":["Plus Jakarta Sans"],"headline-md":["Bodoni Moda"],"headline-lg":["Bodoni Moda"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl":["Bodoni Moda"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Bodoni Moda"],"body-sm":["Plus Jakarta Sans"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"500"}],"headline-md":["28px",{"lineHeight":"36px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"500"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.1em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><a class="font-headline-sm tracking-wider uppercase text-primary font-bold" data-path="home" href="#">Astra Lux</a><nav class="hidden md:flex items-center space-x-space-md" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="home" href="#">Home</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="movies" href="#">Movies</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="showtimes" href="#">Showtimes</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cinemas" href="#">Cinemas</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="promotions" href="#">Promotions</a></nav><div class="flex items-center space-x-space-md"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="bg-surface-container-high text-on-surface placeholder:text-outline text-body-sm rounded-xl pl-10 pr-4 py-2 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Search films..." type="text"/></div><button class="w-8 h-8 rounded-full bg-primary flex items-center justify-center hover:opacity-90 transition-opacity"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></button></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- 1. Cinematic Hero Banner -->
+<section class="relative w-full h-[870px] min-h-[600px] overflow-hidden -mt-20">
+<div class="absolute inset-0 bg-cover bg-center transition-all duration-1000 scale-105" data-alt="A sprawling cinematic wide shot of a desert planet under a dual-sun eclipse with golden light casting long dramatic shadows, epic science fiction atmosphere, high-end luxury dark aesthetic with champagne gold highlights, photorealistic 8k" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFBgjmsYlg_LTYnrrVCDx3bqtIectJQqKkX_ISA_A2nVKdGGf-YVp1bPIKE4cPqsaEdmvRpZZgwZMcRqDQdXDlbSuxWsV3WBREqnDjGtocPrlmTvXKgic2qWhSbCvTqbeah7ZaqGjhzoqBeXNTVB14Pd18Zm9npF3qQBJ1vHevo7qUOXmvCJnzyOnOtGonl6GaRwtuI5Zfnl53jIstjqJqtt9xOAxespVNOg5OnDV5NA8UevZvGB53')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-black/60"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent w-3/4"></div>
+<div class="relative max-w-7xl mx-auto h-full px-gutter flex flex-col justify-end pb-space-xl">
+<div class="max-w-2xl flex flex-col space-y-space-md">
+<div class="flex items-center space-x-space-sm">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-label-md uppercase tracking-wider">Now Premiering</span>
+<span class="text-on-surface-variant text-body-sm">Sci-Fi • Epic</span>
+<span class="text-on-surface-variant text-body-sm">• 2h 45m</span>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded text-label-sm">PG-13</span>
+</div>
+<h1 class="font-headline-xl text-on-surface tracking-tight">Dune: Part Three</h1>
+<p class="text-body-lg text-on-surface-variant line-clamp-3">
+          Paul Atreides ascends to the golden throne across the known universe, facing unprecedented interstellar conflicts, ancient prophecies, and the ultimate test of mortal ambition in IMAX Laser format.
+        </p>
+<div class="flex items-center space-x-space-md pt-space-xs">
+<button class="bg-primary-container text-on-primary-container font-label-lg px-8 py-4 rounded-xl flex items-center space-x-2 hover:opacity-90 transition-opacity shadow-lg shadow-primary-container/20">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">confirmation_number</span>
+<span>Book Tickets</span>
+</button>
+<button class="bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-lg px-8 py-4 rounded-xl hover:bg-surface-container-high transition-colors">
+            View Details
+          </button>
+</div>
+</div>
+<!-- Carousel Indicators -->
+<div class="absolute right-gutter bottom-space-xl hidden md:flex items-center space-x-3">
+<button class="w-12 h-1.5 bg-primary rounded-full transition-all"></button>
+<button class="w-6 h-1.5 bg-surface-container-high rounded-full hover:w-12 transition-all"></button>
+<button class="w-6 h-1.5 bg-surface-container-high rounded-full hover:w-12 transition-all"></button>
+</div>
+</div>
+</section>
+<!-- 2. Now Showing Movie Section -->
+<section class="max-w-7xl mx-auto w-full px-gutter py-space-xl">
+<div class="flex items-end justify-between mb-space-lg">
+<div>
+<span class="text-primary text-label-md uppercase tracking-widest block mb-2">Blockbuster Selection</span>
+<h2 class="font-headline-lg text-on-surface">Now Showing</h2>
+</div>
+<div class="flex items-center space-x-space-sm">
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-surface-bright transition-colors text-on-surface">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-surface-bright transition-colors text-on-surface">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Movie Card 1 -->
+<div class="bg-surface-container rounded-xl overflow-hidden group flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 shadow-xl">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Cinematic movie poster featuring a futuristic interstellar spacecraft near a massive black hole, dark moody atmosphere with gold and deep navy tones, high resolution poster art" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSG7c0m8ohgyDuVSIAYNlfhvMu2aHYnHKNHrBK01eGvz2w0gYuq_Ypa0Qje_BurknbxabRgdlOikzezG4qCmOk0kg_ETGKsCb6SRoVyh7BCV9b_OAm4EGHorOA2bqYu2nQHjjgQpIIFKeVOcvZDyFHsq_4Vzin7uR10_EkiZEMlnowYFH1RBqvP0lfv76eNJvDIf3Ydslovu9Ujuxv0pjtAr1zmlmqNADa1aKMmQB3DFzfsPCpz3Y-')"></div>
+<div class="absolute top-3 right-3 bg-surface/80 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center space-x-1">
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm text-on-surface">9.4</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-outline mb-1">
+<span>IMAX • Dolby</span>
+<span>2h 52m</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Interstellar Reissue</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+</div>
+<div class="pt-space-md mt-4">
+<button class="w-full bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-lg py-3 rounded-lg transition-colors flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Quick Book</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Movie Card 2 -->
+<div class="bg-surface-container rounded-xl overflow-hidden group flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 shadow-xl">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="High contrast neon lit cyberpunk Tokyo alleyway with sleek luxury sportscars and rain-slicked pavement reflecting champagne gold and dark teal lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA24_ut5Z8W-emlKJWO-4Lsbdrq2sSRS1zpad0qOhWRsFtl0rTqzlpL4V1FJqOasocqyZ6eYOrrIQmB8wcscoZ5IAE8elcPMcX0j0JqFYropjNVCrMvi7jBJ-KKpT0utenOi9g-DWACQSe-wLDuO1JrOLYfPxWHsznhIOOkXUJPcvlkkyCrOf7IGzAXHZkqlbBuEAUfleyD5HGEuozh-sygNINVjeEtVetatNgOE8Sx8Msw62lblMZV')"></div>
+<div class="absolute top-3 right-3 bg-surface/80 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center space-x-1">
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm text-on-surface">8.9</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-outline mb-1">
+<span>VIP Suite</span>
+<span>2h 10m</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Neon Genesis Noir</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">An elite detective uncovers a digital conspiracy in the upper echelons of a mega-city floating sky-high.</p>
+</div>
+<div class="pt-space-md mt-4">
+<button class="w-full bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-lg py-3 rounded-lg transition-colors flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Quick Book</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Movie Card 3 -->
+<div class="bg-surface-container rounded-xl overflow-hidden group flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 shadow-xl">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A majestic royal palace floating amidst majestic mountain peaks under starry skies, fantasy epic art style with glowing architecture and celestial auroras" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJrha4bWQUjWucLckKG4oIYtA9kSDqeWdYVOIsThe4pSv3GVnD_V90uoMX88xNskWBryb9L0u129AJemJVl9uOtGx_pbAQQd2e_Ms9hVbzzMLleNfi0VTGypygpiKdGlr_lSmsaQv6u_PnQbHJp2i_k_pvmWb45OLKfsXqtrgB-O-m53x66uVMQdD807gQrg5yOwCWdEtlTUMvCxw0abqdPN7A0DmuFx5JIoHGZVKcEgTVfVWUSCjW')"></div>
+<div class="absolute top-3 right-3 bg-surface/80 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center space-x-1">
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm text-on-surface">9.1</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-outline mb-1">
+<span>IMAX Laser</span>
+<span>3h 15m</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-2">The Celestial Crown</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">The final battle for the astral realms begins as ancient alliances shatter across the galaxy.</p>
+</div>
+<div class="pt-space-md mt-4">
+<button class="w-full bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-lg py-3 rounded-lg transition-colors flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Quick Book</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Movie Card 4 -->
+<div class="bg-surface-container rounded-xl overflow-hidden group flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300 shadow-xl">
+<div class="relative aspect-[3/4] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Mysterious deep sea exploration submarine illuminated by golden searchlights against an abyssal trench backdrop, dramatic cinematic lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDw8ZUNXcffHNd1lvfy5Dq8Pateu73JfnWYJ5QmjVZNFLx_LmnTWO_w3e0y5ZP5bynsOxdHgkcIewqfuqvrxIyGEpdmMiesyK5KrG9yoAdnA7D4VOWNxS9vvNYVCwS8rJvs1axMAVIkNw3gaTfx27Q5tNcPtoY7qpEpQ0DaIKfKQHycfq5mkcn4aJo9tihgplBuB4iGSJu6D2zLi915625A8JbsqbGz8jyjqTgDau2w93td1CSctq4')"></div>
+<div class="absolute top-3 right-3 bg-surface/80 backdrop-blur-md px-2.5 py-1 rounded-full flex items-center space-x-1">
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-sm text-on-surface">8.7</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-outline mb-1">
+<span>Dolby Atmos</span>
+<span>1h 58m</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-2">Abyssal Horizon</h3>
+<p class="text-body-sm text-on-surface-variant line-clamp-2">Deep sea researchers discover an ancient alien structure buried beneath the ocean floor.</p>
+</div>
+<div class="pt-space-md mt-4">
+<button class="w-full bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-lg py-3 rounded-lg transition-colors flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Quick Book</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Coming Soon Movie Section -->
+<section class="bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="text-primary text-label-md uppercase tracking-widest block mb-2">Future Premieres</span>
+<h2 class="font-headline-lg text-on-surface">Coming Soon</h2>
+</div>
+<div class="flex items-center space-x-space-sm mt-4 md:mt-0">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-lg">All Releases</button>
+<button class="px-6 py-2 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-lg transition-colors">Exclusive Screenings</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Coming Soon Card 1 -->
+<div class="relative rounded-xl overflow-hidden group h-[400px] flex items-end p-space-lg shadow-xl">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A lone astronaut standing on the rings of Saturn overlooking distant galaxies, surreal and majestic scientific wonder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKN7cA3GUgnafNDJVW1aUkJP5-Oo-vOdJyPHnAyb2PwMP2L6UwjrwM92QjbwyRCsMEuWA-r_BlU_9sYhJ2QDgg53crftmKTlkipSIcvNsx_m__0m9c_UBKXy8Je-38DXTIprM-BB2JuNAwsnBo6bYSIu0oa0UTzSbw1xVH1lYPm3y0gqKRhw8oXL532FNJwy-AiCR4J9GGtRetKBgiyilQPxV3SeL-Fu6gs2wvfomnqKPecT0SSEXH')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col space-y-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-label-sm uppercase tracking-wider w-fit">Release: Nov 24</span>
+<h3 class="font-headline-md text-on-surface">Chronos Paradox</h3>
+<p class="text-body-sm text-on-surface-variant">Time begins to fracture when a rogue physicist tampers with quantum temporal anchors.</p>
+<button class="text-primary font-label-lg flex items-center space-x-1 pt-2 hover:underline">
+<span>Set Reminder</span>
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+</button>
+</div>
+</div>
+<!-- Coming Soon Card 2 -->
+<div class="relative rounded-xl overflow-hidden group h-[400px] flex items-end p-space-lg shadow-xl">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Gothic neo-noir cathedral floating in the clouds with lightning storm striking the spire, dramatic dark fantasy aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQXPJbwCcPMqU-xxjWn4Ql1V5Dkh3OD8wcaNUhn9OuKTi6w3sQMZiBt2Hpy8FmZWsi99P-gWWvmuK92BEWuQNwGoYCeaGtmK20FHtaPBAFkYdZK2mSmuGI1u9y2dprTDej1c3TEOpK70pCDLs0sXzy1hEfeb_4DGro96XPeNZZynN2Yt0X1aXLxyBBJXB1vMF9ZMt_t0K4TTii99x88likUFsvHOkXq_bpzJnwE3R9isMz-7n0AUmg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col space-y-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-label-sm uppercase tracking-wider w-fit">Release: Dec 12</span>
+<h3 class="font-headline-md text-on-surface">The Obsidian Spire</h3>
+<p class="text-body-sm text-on-surface-variant">An epic dark fantasy adaptation exploring the origins of the shadow monarchs.</p>
+<button class="text-primary font-label-lg flex items-center space-x-1 pt-2 hover:underline">
+<span>Set Reminder</span>
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+</button>
+</div>
+</div>
+<!-- Coming Soon Card 3 -->
+<div class="relative rounded-xl overflow-hidden group h-[400px] flex items-end p-space-lg shadow-xl">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Futuristic hypercar racing through an illuminated magnetic levitation track in a mega city canyon at night" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1wtqzKwSfkw-nPecAsezlBuTGyHRoLnOEUVdFVhL_jZP9Ci5SBL2RHcJFKfG4M6icP7Zu0ODC2p5G-6dr7_OwRx8MmPErZTMC1VYCE4rHfiZlA5ADwBr8jC73iQasQb1GpvUI3L0tpeqUMuK7uecM_Zhh8wMu4R42S7TfJqZOogxrDzw90jEm1aXcn-ya0jcQ5pTt4Tcs24cuQAFH7Jevr1yt-F831Ej7JVA7Q5BtnJcFYQ2TWwZ4')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col space-y-2">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-label-sm uppercase tracking-wider w-fit">Release: Jan 05</span>
+<h3 class="font-headline-md text-on-surface">Velocity Zero</h3>
+<p class="text-body-sm text-on-surface-variant">High-octane underground street racing meets neural-link technology in 2150.</p>
+<button class="text-primary font-label-lg flex items-center space-x-1 pt-2 hover:underline">
+<span>Set Reminder</span>
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Choose Your Cinema Section -->
+<section class="max-w-7xl mx-auto w-full px-gutter py-space-xl">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-primary text-label-md uppercase tracking-widest block mb-2">Flagship Venues</span>
+<h2 class="font-headline-lg text-on-surface mb-4">Choose Your Cinema</h2>
+<p class="text-body-md text-on-surface-variant">Experience unmatched acoustic engineering and bespoke luxury across our premier architectural locations.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Cinema 1 -->
+<div class="bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-xl">
+<div class="h-64 bg-cover bg-center relative" data-alt="Luxurious modern cinema lobby with towering glass atrium, warm golden architectural lighting, minimalist sculptures, and plush velvet seating" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpo0vzKDdY_znjMHg3bt811gQ8_Q2NQx4c_K_LUYQEdDe8cQ439g2b7SteM2qgomDJctptoUzY8rjn9cDfBIND7tA7NhFhIzpna2u6U6LZdnxZAA5486BSv4PNW_W0NyOnVju9xLJr0X6Y234YzVPCCyBG2e_xT0SOVTp8eWElNEZEzVTP3T-GabokdK0gMRD25873BKoctae1-hw4Yso59CSRpcw8zEg1OKNOVMS82yEQ5a71owlz')"></div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-on-surface mb-2">Astra Grand Luxe Downtown</h3>
+<p class="text-body-sm text-on-surface-variant mb-4">Our flagship location featuring private cocktail lounges, valet parking, and 4K laser projection.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">Valet Service</span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">VIP Lounge</span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">Dolby Atmos</span>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-label-lg py-3 rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center space-x-2">
+<span>Explore Showtimes</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Cinema 2 -->
+<div class="bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-xl">
+<div class="h-64 bg-cover bg-center relative" data-alt="State of the art IMAX laser auditorium with massive curved screen, glowing indigo and gold aisle lighting, and luxury reclining leather seats" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiYyfo5VMJzdjG58slcI3oVA4vgd9iI4mwxckGmG-RT1E2eL_PCGeBBIVE1rzhFDPei0UpRg_AAUAgL3ezxuHNpBZCE1tZejj6ATNzfpa6fYyfgPvPYaeLQdqYJLHleiX-e71acYf12VPtiK1OViX2IffLeWRPIJo84LAK86KVMa-V5BRRZFtXHWjgZ4R-zsSSNAUY_DexoVensMHtkshoo9MeCEx_Hel8B1VlpxeZYSBo3RwQL4c8')"></div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-on-surface mb-2">Astra IMAX Marina</h3>
+<p class="text-body-sm text-on-surface-variant mb-4">Home to the region's largest certified IMAX Laser screen and 12-channel immersive surround sound.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">IMAX Laser 70mm</span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">Waterfront Views</span>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-label-lg py-3 rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center space-x-2">
+<span>Explore Showtimes</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Cinema 3 -->
+<div class="bg-surface-container rounded-xl overflow-hidden flex flex-col justify-between shadow-xl">
+<div class="h-64 bg-cover bg-center relative" data-alt="Exclusive private VIP screening room with plush leather recliners, personal butler service button, gourmet dining setup, and intimate upscale ambiance" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-MEqfA9nrKGcEoNLgFmGDlO5TXtULH2WoQw1pMgUYznQLP5o237iHVwujQskM1cw7NLfagtMBh0E6098ZGtcNLa0oF1fREaqokxugFpr9dqRLcuNIoKnzKHy9Z0wG4RJY-F0gFM2DdQWz1bp3WIGEPHh1pCk4AV9Q3U_qivslQIRIdXm_3SciDT9kP-7Ix86_ZE8U76er0Oe7fCyq6hx0u5oF-0wodUqo-zQLUBDevNDMiabz12CC')"></div>
+<div class="p-space-lg flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-on-surface mb-2">Astra VIP Suites</h3>
+<p class="text-body-sm text-on-surface-variant mb-4">An ultra-exclusive boutique cinema featuring fully reclining leather pods, blankets, and on-demand butler service.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">Butler Service</span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">Gourmet Dining</span>
+<span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded text-label-sm">Fully Reclining</span>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary-container font-label-lg py-3 rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center space-x-2">
+<span>Explore Showtimes</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Cinema Experience & VIP Facilities Section -->
+<section class="bg-surface-container-low py-space-xl my-space-xl">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-center">
+<div class="flex flex-col space-y-space-md">
+<div>
+<span class="text-primary text-label-md uppercase tracking-widest block mb-2">Absolute Immersion</span>
+<h2 class="font-headline-lg text-on-surface mb-4">Uncompromising Audiovisual Perfection</h2>
+<p class="text-body-md text-on-surface-variant">
+              Every Astra Lux auditorium is calibrated to hyper-exact THX standards. Featuring dual 4K laser projection engines, crystal-clear soundstage separation, and bespoke seating engineered for supreme relaxation.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface p-space-md rounded-xl">
+<span class="material-symbols-outlined text-primary text-[32px] mb-2" style="font-variation-settings: 'FILL' 1;">surround_sound</span>
+<h4 class="font-headline-sm text-on-surface mb-1">Dolby Atmos</h4>
+<p class="text-body-sm text-on-surface-variant">Moving audio that flows all around you with breathtaking realism.</p>
+</div>
+<div class="bg-surface p-space-md rounded-xl">
+<span class="material-symbols-outlined text-primary text-[32px] mb-2" style="font-variation-settings: 'FILL' 1;">chair</span>
+<h4 class="font-headline-sm text-on-surface mb-1">Luxury Recliners</h4>
+<p class="text-body-sm text-on-surface-variant">Handcrafted Italian leather recliners with integrated heating and charging.</p>
+</div>
+<div class="bg-surface p-space-md rounded-xl">
+<span class="material-symbols-outlined text-primary text-[32px] mb-2" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<h4 class="font-headline-sm text-on-surface mb-1">Private Dining</h4>
+<p class="text-body-sm text-on-surface-variant">Gourmet chef-curated menus delivered directly to your seat mid-screening.</p>
+</div>
+<div class="bg-surface p-space-md rounded-xl">
+<span class="material-symbols-outlined text-primary text-[32px] mb-2" style="font-variation-settings: 'FILL' 1;">movie</span>
+<h4 class="font-headline-sm text-on-surface mb-1">IMAX Laser</h4>
+<p class="text-body-sm text-on-surface-variant">Sharper, brighter, and more lifelike images with deeper contrast ratios.</p>
+</div>
+</div>
+</div>
+<div class="relative h-[550px] rounded-xl overflow-hidden shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Cinematic luxury screening room interior showcasing plush leather seats, ambient golden backlighting, and state of the art giant silver screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASjxmZ-9U4YdyMj5AKfuD8p7XH5K0LCBYEjKqTqrl4N9I6Pu8fIIxBpQFILbs9YocMaytKrYL9_cVCJWHQH8wRAmlrf0FSa7b4TtDYzxRdVxuiH00zryeJtcBrtixAKKrhZLUQY3Fn0As7sKbuleQ-GLcANIJnxkz_24qBxhiZc9waRWFG4azNxO2CHbbtu2OZ9p5_JstDMP4csuEblqa43Zk5mFPhN_MrTdZkgUYLxClKw_ziOeaC')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Promotions and Exclusive Membership Section -->
+<section class="max-w-7xl mx-auto w-full px-gutter py-space-xl mb-space-xl">
+<div class="relative rounded-2xl overflow-hidden bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-space-xl shadow-2xl">
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-center">
+<div class="flex flex-col space-y-space-md">
+<span class="bg-primary/20 text-primary px-3 py-1 rounded-full text-label-sm uppercase tracking-wider w-fit">Astra Club Elite</span>
+<h2 class="font-headline-lg text-on-surface">Elevate Your Cinematic Journey</h2>
+<p class="text-body-md text-on-surface-variant">
+            Join Astra Club Elite to unlock complimentary ticket upgrades, priority booking windows for major blockbusters, invitations to red-carpet premieres, and exclusive lounge access.
+          </p>
+<div class="flex items-center space-x-space-md pt-2">
+<button class="bg-primary-container text-on-primary-container font-label-lg px-8 py-4 rounded-xl hover:opacity-90 transition-opacity shadow-lg">
+              Join Elite Club
+            </button>
+<button class="text-on-surface hover:text-primary font-label-lg transition-colors px-4 py-4">
+              View Member Benefits
+            </button>
+</div>
+</div>
+<div class="bg-surface/80 backdrop-blur-md p-space-lg rounded-xl flex flex-col space-y-space-md border border-outline-variant/20 shadow-xl">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-primary">Current Special Offer</span>
+<span class="bg-primary/20 text-primary px-2.5 py-0.5 rounded text-label-sm">Limited Time</span>
+</div>
+<h3 class="font-headline-md text-on-surface">IMAX Date Night Package</h3>
+<p class="text-body-sm text-on-surface-variant">
+            Enjoy two IMAX tickets, gourmet popcorn to share, and two signature cocktails for a special bundled price every Wednesday evening.
+          </p>
+<button class="w-full bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-lg py-3 rounded-lg transition-colors flex items-center justify-center space-x-2">
+<span>Claim Offer</span>
+<span class="material-symbols-outlined text-[18px]">local_activity</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="flex flex-col space-y-space-sm"><span class="font-headline-sm text-primary uppercase">Astra Lux</span><p class="text-body-sm text-on-surface-variant">The pinnacle of cinematic luxury and immersive audio-visual storytelling.</p></div><div><h4 class="font-label-lg text-on-surface mb-space-sm">Experience</h4><ul class="space-y-space-xs text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">IMAX Laser</a></li><li><a class="hover:text-primary transition-colors" href="#">Dolby Atmos</a></li><li><a class="hover:text-primary transition-colors" href="#">VIP Suites</a></li></ul></div><div><h4 class="font-label-lg text-on-surface mb-space-sm">Corporate</h4><ul class="space-y-space-xs text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">About Us</a></li><li><a class="hover:text-primary transition-colors" href="#">Careers</a></li><li><a class="hover:text-primary transition-colors" href="#">Press</a></li></ul></div><div><h4 class="font-label-lg text-on-surface mb-space-sm">Legal</h4><ul class="space-y-space-xs text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li><li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li></ul></div></div><div class="max-w-7xl mx-auto px-gutter pt-space-md border-t border-outline-variant/30 text-center text-body-sm text-outline">© 2024 Astra Lux Cinema. All rights reserved.</div></footer></body></html>

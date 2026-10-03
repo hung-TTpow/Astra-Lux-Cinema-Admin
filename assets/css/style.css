@@ -357,7 +357,7 @@ section {
     margin-bottom: var(--space-10);
 }
 
-header, main, footer {
+main {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: var(--space-6) var(--gutter-desktop);

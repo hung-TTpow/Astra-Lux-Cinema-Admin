@@ -57,7 +57,7 @@ body {
     line-height: 1.6;
 }
 
-<<<<<<< HEAD
+ HEAD
 .heading-xl {
     font-family: var(--font-heading);
     font-size: 48px;
@@ -629,7 +629,7 @@ section {
         padding-right: var(--gutter-mobile);
     }
 }
-=======
+
 html,
 body {
   margin: 0;
@@ -652,4 +652,4 @@ main > :last-child {
 ::-webkit-scrollbar {
     display: none;
 }
->>>>>>> 5bce639d4d1fbc51d7b8f3c4ad57b8abeaa08abc
+

@@ -1,28 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Astra Lux Cinema</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Astra Lux Cinema</h1>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-mark">★</div>
+                <div>
+                    <span class="logo-name">Astra Lux</span>
+                    <span class="logo-sub">Cinema</span>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a class="nav-link active" href="#">Overview</a>
+                <a class="nav-link" href="#">Movies</a>
+                <a class="nav-link" href="#">Showtimes</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+
+            <button class="btn btn-primary">Book Tickets</button>
+        </div>
     </header>
 
     <main>
-        <h2>Welcome to Astra Lux Cinema</h2>
-        <p>Experience cinema beyond imagination.</p>
+        <!-- TYPOGRAPHY -->
+        <section>
+            <span class="label-lg">Now Showing</span>
+            <h2 class="heading-xl">Welcome to Astra Lux Cinema</h2>
+            <p class="body-lg">Experience cinema beyond imagination.</p>
+            <p class="body-md">Đây là body medium.</p>
+            <p class="body-sm">Đây là body small.</p>
+            <span class="label-md">Auditorium 01</span><br>
+            <span class="label-sm">Row H • Seat 14</span>
+        </section>
+
+        <!-- BUTTONS -->
+        <section>
+            <h3 class="heading-lg">Buttons</h3>
+            <button class="btn btn-primary">Book Tickets</button>
+            <button class="btn btn-outline">View Details</button>
+            <button class="btn btn-surface">Back</button>
+            <button class="btn btn-ghost">Return</button>
+            <button class="btn btn-primary" disabled>Sold Out</button>
+        </section>
+
+        <!-- FORMS -->
+        <section>
+            <h3 class="heading-lg">Forms</h3>
+
+            <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input class="form-input" id="name" type="text" placeholder="Eleanor Vance">
+                <span class="form-help">Dùng để xác minh vé.</span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="promo">Promo Code</label>
+                <input class="form-input error" id="promo" type="text" value="GOLDEN2024">
+                <span class="form-error">Mã đã hết hạn.</span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="cinema">Cinema</label>
+                <select class="form-select" id="cinema">
+                    <option>Astra Grand Luxe</option>
+                    <option>Astra IMAX Marina</option>
+                </select>
+            </div>
+
+            <label><input type="checkbox" checked> Concierge service</label>
+            <label><input type="radio" name="tier" checked> IMAX</label>
+            <label><input type="radio" name="tier"> VIP</label>
+        </section>
+
+        <!-- CARDS -->
+        <section>
+            <h3 class="heading-lg">Cards</h3>
+
+            <div class="card" style="max-width: 320px;">
+                <span class="card-label">Standard Card</span>
+                <h3 class="card-title">Concierge VIP Lounge</h3>
+                <p class="card-text">Thẻ nội dung dùng nền surface và viền mảnh.</p>
+                <div class="card-footer">
+                    <span class="body-sm">Level 1</span>
+                    <button class="btn btn-ghost">Explore →</button>
+                </div>
+            </div>
+
+            <div class="movie-card" style="max-width: 320px; margin-top: 24px;">
+                <div class="movie-poster">
+                    <span class="label-lg">Sci-Fi • 2h 45m</span>
+                    <h3 class="card-title">Astra: Beyond Orbit</h3>
+                </div>
+                <div class="movie-body">
+                    <div class="movie-actions">
+                        <button class="btn btn-surface">Details</button>
+                        <button class="btn btn-primary">Book</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BADGES & ALERTS -->
+        <section>
+            <h3 class="heading-lg">Badges &amp; Alerts</h3>
+
+            <span class="badge badge-gold">VIP Black Diamond</span>
+            <span class="badge badge-neutral">Dolby 7.1</span>
+            <span class="badge badge-success"><span class="badge-dot"></span> Available</span>
+            <span class="badge badge-warning"><span class="badge-dot"></span> Selling Fast</span>
+            <span class="badge badge-error"><span class="badge-dot"></span> Sold Out</span>
+            <span class="badge badge-rating">PG-13</span>
+
+            <div class="alert alert-info" style="margin-top: 24px;">
+                <div>
+                    <span class="alert-title">Giữ ghế 10 phút</span>
+                    Hãy thanh toán trước khi hết giờ.
+                </div>
+                <span class="label-lg">09:42</span>
+            </div>
+
+            <div class="alert alert-error" style="margin-top: 16px;">
+                <div>
+                    <span class="alert-title">Ghế đã có người đặt</span>
+                    Vui lòng chọn ghế khác.
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>© 2026 Astra Lux Cinema</p>
-    </footer>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <span class="logo-name">Astra Lux</span>
+                    <p class="body-sm" style="margin-top: 16px;">Luxury cinema and immersive storytelling.</p>
+                </div>
+                <div>
+                    <span class="footer-title">Experience</span>
+                    <ul class="footer-links">
+                        <li><a href="#">IMAX Laser 4K</a></li>
+                        <li><a href="#">Dolby Atmos</a></li>
+                        <li><a href="#">VIP Lounges</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer-title">Portals</span>
+                    <ul class="footer-links">
+                        <li><a href="#">Client Lounge</a></li>
+                        <li><a href="#">Staff Terminal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer-title">Legal</span>
+                    <ul class="footer-links">
+                        <li><a href="#">Ticketing Policy</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2026 Astra Lux Cinema. All rights reserved.</div>
+        </div>
+    </footer>>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

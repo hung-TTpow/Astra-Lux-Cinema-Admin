@@ -1,0 +1,77 @@
+/* ===== HEADING (font có chân Bodoni Moda) ===== */
+.heading-xl {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.heading-lg {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.heading-md {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.heading-sm {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+/* ===== BODY (font không chân Plus Jarkarta Sans) ===== */
+.body-lg {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text-primary);
+}
+
+.body-md {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-text-secondary);
+}
+
+.body-sm {
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-text-muted);
+}
+
+/* ===== LABEL (chữ hoa, giãn chữ) ===== */
+.label-lg {
+     font-size: 12px;
+     line-height: 16px;
+     font-weight: 600;
+     letter-spacing: 0.08em;
+     text-transform: uppercase;
+     color: var(--color-primary);
+}
+
+.label-md {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.label-sm {
+    font-size: 9px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}

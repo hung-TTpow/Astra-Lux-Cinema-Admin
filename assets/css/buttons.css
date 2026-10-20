@@ -1,0 +1,96 @@
+/* ===== NỀN CHUNG ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+/* ===== BIẾN THỂ ===== */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: rgba(214, 179, 106, 0.1);
+}
+
+.btn-surface {
+    background-color: var(--color-surface-elevated);
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+}
+
+.btn-surface:hover {
+    background-color: var(--color-surface-highlight);
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: var(--color-text-secondary);
+}
+
+.btn-ghost:hover {
+    color: var(--color-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-danger {
+    background-color: transparent;
+    color: var(--color-error);
+}
+
+.btn-danger:hover {
+    background-color: rgba(248, 113, 113, 0.1);
+}
+
+/* ===== KIỂU DÁNG ĐẶC BIỆT ===== */
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.btn-pill {
+    padding: 4px 12px;
+    border-color: rgba(214, 179, 106, 0.4);
+    border-radius: 999px;
+    background-color: rgba(214, 179, 106, 0.12);
+    color: var(--color-primary);
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.btn-pill:hover {
+    border-color: var(--color-primary);
+}
+
+/* ===== VÔ HIỆU HÓA (luôn đặt cuối) ===== */
+.btn:disabled {
+    background-color: var(--color-surface-elevated);
+    border-color: var(--color-border);
+    color: var(--color-text-muted);
+    cursor: not-allowed;
+}

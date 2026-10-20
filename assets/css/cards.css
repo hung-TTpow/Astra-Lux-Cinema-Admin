@@ -1,0 +1,204 @@
+/* ===== LƯỚI CHỨA CÁC CARD ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-4);
+}
+
+/* ===== CARD THƯỜNG ===== */
+.card {
+    padding: var(--space-6);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-normal);
+}
+
+.card:hover {
+    border-color: rgba(214, 179, 106, 0.4);
+}
+
+.card-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.card-title {
+    margin-top: var(--space-1);
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-text {
+    margin-top: var(--space-2);
+    font-size: 12px;
+    color: var(--color-text-secondary);
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border-subtle);
+}
+
+/* ===== THẺ PHIM ===== */
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    transition: var(--transition-normal);
+}
+
+.movie-card:hover {
+    border-color: var(--color-primary);
+}
+
+.movie-poster {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 256px;
+    padding: var(--space-4);
+    background: linear-gradient(
+        to top,
+        var(--color-surface),
+        var(--color-surface-elevated),
+        var(--color-background)
+    );
+}
+
+.poster-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.poster-tags {
+    display: flex;
+    gap: 6px;
+}
+
+.poster-tag {
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-text-secondary);
+}
+
+.poster-tag-gold {
+    border-color: rgba(214, 179, 106, 0.4);
+    color: var(--color-primary);
+}
+
+.movie-body {
+    padding: var(--space-4);
+    border-top: 1px solid var(--color-border);
+}
+
+.movie-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.movie-time {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.movie-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+}
+
+/* ===== VÉ ĐẶT CHỖ ===== */
+.pass {
+    padding: var(--space-6);
+    background: linear-gradient(135deg, var(--color-surface-elevated), var(--color-surface));
+    border: 1px solid rgba(214, 179, 106, 0.4);
+    border-radius: var(--radius-lg);
+}
+
+.pass-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pass-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-success);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.pass-label {
+    margin-top: var(--space-4);
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.pass-ref {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.pass-details {
+    margin-top: var(--space-4);
+    padding: var(--space-3);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.pass-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.pass-row + .pass-row {
+    margin-top: var(--space-2);
+}
+
+.pass-value {
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.pass-gold {
+    color: var(--color-primary);
+}
+
+.pass-btn {
+    width: 100%;
+    margin-top: var(--space-4);
+}

@@ -1,0 +1,165 @@
+/* ===== NHÓM LABEL + Ô NHẬP ===== */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: var(--space-4);
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.form-required {
+    color: var(--color-primary);
+}
+
+/* ===== Ô NHẬP ===== */
+.form-input {
+    width: 100%;
+    padding: 10px 14px;
+    background-color: var(--color-surface-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    color: var(--color-text-primary);
+    transition: var(--transition-fast);
+}
+
+.form-input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 1px rgba(214, 179, 106, 0.4);
+}
+
+.form-input:disabled {
+    background-color: var(--color-background);
+    color: var(--color-text-muted);
+    cursor: not-allowed;
+}
+
+.form-textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+/* ===== TRẠNG THÁI LỖI (đặt SAU focus) ===== */
+.form-input.error,
+.form-input.error:focus {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.4);
+}
+
+/* ===== CHỮ GỢI Ý VÀ BÁO LỖI ===== */
+.form-help {
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
+
+.form-error {
+    font-size: 11px;
+    color: var(--color-error);
+}
+
+/* ===== SELECT ===== */
+.form-select {
+    width: 100%;
+    padding: 10px 40px 10px 14px;
+    appearance: none;
+    background-color: var(--color-surface-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 1px rgba(214, 179, 106, 0.4);
+}
+
+.form-select-wrap {
+    position: relative;
+}
+
+.form-select-wrap::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid var(--color-text-muted);
+    border-bottom: 2px solid var(--color-text-muted);
+    transform: translateY(-70%) rotate(45deg);
+    pointer-events: none;
+}
+
+/* ===== Ô TÌM KIẾM CÓ ICON ===== */
+.form-search {
+    position: relative;
+}
+
+.form-search .form-input {
+    padding-left: 36px;
+}
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+}
+
+/* ===== CHECKBOX VÀ RADIO ===== */
+input[type="checkbox"],
+input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--color-primary);
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+    cursor: pointer;
+}
+
+.form-check input {
+    margin-top: 2px;
+}
+
+.form-check-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    transition: var(--transition-fast);
+}
+
+.form-check:hover .form-check-title {
+    color: var(--color-primary);
+}
+
+.form-check-desc {
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
+
+/* ===== LƯỚI NHIỀU CỘT ===== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+}

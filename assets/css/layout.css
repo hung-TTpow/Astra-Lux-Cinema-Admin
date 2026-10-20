@@ -141,3 +141,16 @@
     gap: var(--space-4);
     margin-top: var(--space-4);
 }
+
+/* ===== KHOẢNG CÁCH TRANG ===== */
+main {
+    padding: var(--space-10) 0;
+}
+
+section {
+    margin-bottom: var(--space-10);
+}
+
+section > .label-lg {
+    margin-bottom: var(--space-4);
+}

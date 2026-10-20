@@ -233,6 +233,83 @@
         </div>
     </div>
 </section>
+<section>
+    <p class="label-lg">Navigation</p>
+
+    <nav class="breadcrumb">
+        <a href="#">Home</a>
+        <span>/</span>
+        <a href="#">Movies</a>
+        <span>/</span>
+        <a href="#">Sci-Fi</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Interstellar Odyssey</span>
+    </nav>
+
+    <div class="tabs">
+        <button class="tab active">Today (24 Oct) <span class="tab-count">8</span></button>
+        <button class="tab">Tomorrow (25 Oct)</button>
+        <button class="tab">Saturday (26 Oct)</button>
+    </div>
+
+    <div class="pagination">
+        <span class="pagination-info">Showing 1-12 of 48 movies</span>
+        <div class="pagination-pages">
+            <button class="page-btn" disabled>←</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">→</button>
+        </div>
+    </div>
+</section>
+<section>
+    <p class="label-lg">Overlays &amp; Loading</p>
+
+    <div class="overlay-grid">
+
+        <!-- Modal -->
+        <div class="modal">
+            <div class="modal-header">
+                <div>
+                    <span class="label-lg">Concierge Confirmation</span>
+                    <h4 class="card-title">Confirm VIP Suite Booking</h4>
+                </div>
+                <button class="modal-close" aria-label="Close">✕</button>
+            </div>
+            <p class="modal-text">You are about to finalize your reservation for Auditorium VIP 01.</p>
+            <div class="modal-actions">
+                <button class="btn btn-surface">Cancel</button>
+                <button class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+
+        <!-- Loading -->
+        <div class="card">
+            <div class="loading-row">
+                <div class="spinner"></div>
+                <div>
+                    <p class="loading-title">Synchronizing Seat Grid...</p>
+                    <p class="loading-sub">Polling live seat status</p>
+                </div>
+            </div>
+            <div class="skeleton-box">
+                <div class="skeleton skeleton-line-lg"></div>
+                <div class="skeleton skeleton-line-md"></div>
+                <div class="skeleton skeleton-block"></div>
+            </div>
+        </div>
+
+        <!-- Trạng thái trống -->
+        <div class="empty">
+            <div class="empty-icon">🎟</div>
+            <h4 class="card-title">No Upcoming Bookings</h4>
+            <p class="empty-text">You haven't reserved any screenings yet. Explore the catalog to secure your seat.</p>
+            <button class="btn btn-primary">Browse Showtimes</button>
+        </div>
+
+    </div>
+</section>
     </div>
 </main>
     <footer class="site-footer">

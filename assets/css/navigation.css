@@ -1,0 +1,102 @@
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb-current {
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+/* ===== TABS ===== */
+.tabs {
+    display: flex;
+    gap: var(--space-8);
+    margin-top: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding-bottom: var(--space-3);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.tab:hover {
+    color: var(--color-text-primary);
+}
+
+.tab.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.tab-count {
+    padding: 0 6px;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-sm);
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-background);
+}
+
+/* ===== PHÂN TRANG ===== */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--space-6);
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.pagination-pages {
+    display: flex;
+    gap: var(--space-1);
+}
+
+.page-btn {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-surface-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.page-btn:hover {
+    color: var(--color-text-primary);
+}
+
+.page-btn.active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    font-weight: 700;
+    color: var(--color-background);
+}
+
+.page-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}

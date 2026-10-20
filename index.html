@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Astra Lux Design System</title>
 
-        <link rel="preconnect" href="https: //fonts.goofleapis.com">
-        <link rel="preconnect" href="https: //fonts.gstatic.com" crossorigin>
-        <link href="https: //fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
    <body>
@@ -99,6 +99,44 @@
         <label class="form-label" for="note">Note</label>
         <textarea class="form-input form-textarea" id="note" placeholder="Special requests..."></textarea>
     </div>
+    <div class="form-grid">
+    <div class="form-group">
+        <label class="form-label" for="cinema">Select Cinema</label>
+        <div class="form-select-wrap">
+            <select class="form-select" id="cinema">
+                <option>Astra Grand Luxe</option>
+                <option>Astra IMAX Marina</option>
+                <option>Astra VIP Suites</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="search">Search</label>
+        <div class="form-search">
+            <span class="form-icon">⌕</span>
+            <input class="form-input" id="search" type="text" placeholder="Search films, actors...">
+        </div>
+    </div>
+</div>
+
+<label class="form-check">
+    <input type="checkbox" checked>
+    <div>
+        <span class="form-check-title">Add Concierge Service ($15)</span>
+        <p class="form-check-desc">In-seat drinks and pastry service.</p>
+    </div>
+</label>
+
+<label class="form-check">
+    <input type="radio" name="tier" checked>
+    <div><span class="form-check-title">IMAX Laser 4K ($24.50)</span></div>
+</label>
+
+<label class="form-check">
+    <input type="radio" name="tier">
+    <div><span class="form-check-title">VIP Private Suite ($45)</span></div>
+</label>
 </section>
 
     </div>
@@ -138,6 +176,7 @@
         </div>
 
         <div class="footer-bottom">© 2026 Astra Lux Cinema. All rights reserved.</div>
+
     </div>
 </footer>
 </body>

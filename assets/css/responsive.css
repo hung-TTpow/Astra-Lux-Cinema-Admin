@@ -1,0 +1,85 @@
+/* ===== MÁY TÍNH BẢNG ( < hoặc = 1024px) ===== */
+@media (max-width: 1024px) {
+    .card-grid,
+    .overlay-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ===== ĐIỆN THOẠI ( < hoặc = 768px) ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--gutter-mobile);
+    }
+
+    .heading-xl {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .heading-lg {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .heading-md {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .heading-sm {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .card-grid,
+    .overlay-grid,
+    .form-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .header-inner .btn {
+        padding: 8px 12px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-4);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: var(--space-4) var(--gutter-mobile);
+        background-color: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .tabs {
+        gap: var(--space-6);
+        overflow-x: auto;
+    }
+
+    .tab {
+        white-space: nowrap;
+    }
+
+    .pagination {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-3);
+    }
+}

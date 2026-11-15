@@ -1,0 +1,219 @@
+/* ===== BỐ CỤC TRANG SYSTEM ===== */
+.ds-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: var(--space-10);
+    align-items: start;
+}
+
+/* ===== MỘT MỤC LỚN (Typography, Buttons...) ===== */
+.ds-section {
+    margin-bottom: var(--space-16);
+    scroll-margin-top: calc(80px + var(--space-6));
+}
+
+.ds-section-head {
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.ds-section-head .heading-lg {
+    margin-top: var(--space-2);
+}
+
+.ds-section-head .body-md {
+    margin-top: var(--space-2);
+    max-width: 640px;
+}
+
+/* ===== MỘT KHỐI NHỎ TRONG MỤC ===== */
+.ds-block {
+    margin-bottom: var(--space-6);
+}
+
+.ds-block-title {
+    margin-bottom: var(--space-3);
+}
+
+/* Khung preview: nơi đặt component thật */
+.ds-demo {
+    padding: var(--space-6);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+/* Dòng tên class bên dưới khung */
+.ds-code {
+    display: block;
+    margin-top: var(--space-3);
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
+
+/* ===== MỤC LỤC BÊN TRÁI (dùng ở việc 3) ===== */
+.ds-sidebar {
+    position: sticky;
+    top: calc(80px + var(--space-6));
+    padding: var(--space-4);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.ds-sidebar-title {
+    margin-bottom: var(--space-3);
+    padding: 0 12px;
+}
+
+.ds-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.ds-sidebar a {
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    transition: var(--transition-fast);
+}
+
+.ds-sidebar a:hover {
+    color: var(--color-primary);
+    background-color: rgba(214, 179, 106, 0.08);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .ds-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .ds-sidebar {
+        position: static;
+    }
+
+    .ds-sidebar nav {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .ds-sidebar a {
+        white-space: nowrap;
+    }
+}
+
+/* ===== BỔ SUNG CHO KHUNG PREVIEW ===== */
+.ds-content {
+    min-width: 0;
+}
+
+.ds-demo > :first-child {
+    margin-top: 0;
+}
+
+.ds-demo .form-group:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== COLORS ===== */
+.ds-swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--space-4);
+}
+
+.ds-swatch {
+    overflow: hidden;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.ds-chip {
+    height: 64px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.ds-swatch-info {
+    padding: var(--space-3);
+}
+
+.ds-swatch-name {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ds-swatch-hex {
+    display: block;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
+
+/* ===== SPACING ===== */
+.ds-space-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-2);
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.ds-space-row code {
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.ds-space-bar {
+    height: 12px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+/* ===== RADIUS ===== */
+.ds-radius-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+}
+
+.ds-radius-box {
+    width: 96px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-surface-elevated);
+    border: 1px solid var(--color-primary);
+    font-size: 11px;
+    color: var(--color-text-secondary);
+}
+
+/* ===== CARD/OVERLAY TỰ XUỐNG HÀNG TRONG KHUNG PREVIEW ===== */
+.ds-demo .card-grid,
+.ds-demo .overlay-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* ===== ĐIỆN THOẠI ===== */
+@media (max-width: 768px) {
+    .ds-demo {
+        padding: var(--space-4);
+    }
+
+    .ds-section {
+        margin-bottom: var(--space-10);
+    }
+
+    .ds-swatches {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

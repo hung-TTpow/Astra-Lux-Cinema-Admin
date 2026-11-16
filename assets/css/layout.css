@@ -74,7 +74,7 @@
     transition: var(--transition-fast);
 }
 
-.nav-link.hover {
+.nav-link:hover {
     color: var(--color-text-primary);
 }
 
@@ -143,16 +143,12 @@
 }
 
 /* ===== KHOẢNG CÁCH TRANG ===== */
-main {
+.page-main {
     padding: var(--space-10) 0;
 }
 
-section {
+.section {
     margin-bottom: var(--space-10);
-}
-
-section > .label-lg {
-    margin-bottom: var(--space-4);
 }
 
 /* ===== NÚT MỞ MENU ĐIỆN THOẠI ===== */

@@ -1,189 +1,206 @@
 # 🎬 Astra Lux Cinema
 
-A modern online cinema ticket booking website developed as a collaborative learning project.
+Website đặt vé xem phim trực tuyến hiện đại, được phát triển như một dự án học tập theo nhóm.
 
-Astra Lux Cinema aims to provide users with a convenient and intuitive platform to discover movies, view showtimes, select seats, and book cinema tickets online.
+Astra Lux Cinema hướng tới việc mang lại cho người dùng một nền tảng tiện lợi và trực quan để khám phá phim, xem lịch chiếu, chọn ghế và đặt vé xem phim online.
 
-The project is developed by a student team to strengthen practical skills in frontend development, backend programming, database design, Git/GitHub collaboration, and software project organization.
-
----
-
-## 📌 Project Introduction
-
-Astra Lux Cinema is an online cinema management and ticket booking system.
-
-The website is designed with a modern, elegant, and cinematic visual style. It will support different types of users, including customers, staff, and administrators.
-
-Customers can browse movies, view movie details, check showtimes, select seats, and make ticket bookings.
-
-Staff members can manage screenings, monitor bookings, and support cinema operations.
-
-Administrators can manage users, movies, cinemas, showtimes, bookings, and system data.
+Dự án do một nhóm sinh viên thực hiện nhằm củng cố kỹ năng thực tế về lập trình frontend, lập trình backend, thiết kế cơ sở dữ liệu, cộng tác bằng Git/GitHub và tổ chức dự án phần mềm.
 
 ---
 
-## 🎯 Project Objectives
+## 📌 Giới thiệu dự án
 
-The main objectives of this project are:
+Astra Lux Cinema là hệ thống quản lý rạp phim và đặt vé trực tuyến.
 
-- Build a functional online cinema ticket booking website.
-- Practice frontend development using HTML, CSS, and JavaScript.
-- Learn backend development using PHP.
-- Design and integrate a MySQL database.
-- Understand client-server communication.
-- Practice Git and GitHub collaboration.
-- Learn how to organize a software project using branches.
-- Improve teamwork, code review, debugging, and testing skills.
-- Create a practical project for learning, portfolio, and future career development.
-- Prepare the project for future expansion into a mobile application.
+Website được thiết kế theo phong cách hiện đại, sang trọng và mang tinh thần điện ảnh. Hệ thống hỗ trợ nhiều loại người dùng: khách hàng, nhân viên và quản trị viên.
+
+Khách hàng có thể xem danh sách phim, xem chi tiết phim, kiểm tra lịch chiếu, chọn ghế và đặt vé.
+
+Nhân viên có thể quản lý suất chiếu, theo dõi đặt vé và hỗ trợ vận hành rạp.
+
+Quản trị viên có thể quản lý người dùng, phim, rạp, suất chiếu, đặt vé và dữ liệu hệ thống.
 
 ---
 
-## 🛠️ Technologies and Tools
+## 🎯 Mục tiêu dự án
+
+Các mục tiêu chính của dự án:
+
+- Xây dựng website đặt vé xem phim trực tuyến hoạt động đầy đủ.
+- Thực hành lập trình frontend bằng HTML, CSS và JavaScript.
+- Học lập trình backend bằng PHP.
+- Thiết kế và tích hợp cơ sở dữ liệu MySQL.
+- Hiểu cách client và server giao tiếp với nhau.
+- Thực hành cộng tác bằng Git và GitHub.
+- Biết cách tổ chức dự án phần mềm bằng các nhánh (branch).
+- Nâng cao kỹ năng làm việc nhóm, review code, gỡ lỗi và kiểm thử.
+- Tạo ra một dự án thực tế phục vụ học tập, portfolio và định hướng nghề nghiệp.
+- Chuẩn bị nền tảng để mở rộng thành ứng dụng di động trong tương lai.
+
+---
+
+## 🛠️ Công nghệ và công cụ
 
 ### Frontend
 
 - HTML5
 - CSS3
 - JavaScript
-- Responsive Web Design
+- Thiết kế web responsive
 
 ### Backend
 
 - PHP
-- PHP REST-style endpoints
+- Các endpoint theo phong cách REST bằng PHP
 
-### Database
+### Cơ sở dữ liệu
 
 - MySQL
 
-### Development Tools
+### Công cụ phát triển
 
 - Visual Studio Code
 - Git
 - GitHub
 - Figma
 - Stitch
-- Browser Developer Tools
+- Công cụ dành cho nhà phát triển của trình duyệt (DevTools)
 
-### Planned Deployment
+### Dự kiến triển khai
 
-The project is planned to be deployed online using a hosting environment that supports:
+Dự án dự kiến được triển khai online trên môi trường hosting hỗ trợ:
 
 - PHP
 - MySQL
-- Apache or Nginx
+- Apache hoặc Nginx
 - HTTPS
-- Custom domain
+- Tên miền riêng
 
-The project is not dependent on XAMPP for production deployment.
+Dự án không phụ thuộc vào XAMPP khi triển khai thực tế.
 
-XAMPP or another local PHP environment may be used for local development if necessary.
-
----
-
-## ✨ Planned Features
-
-### 👤 Customer Features
-
-- Register an account.
-- Log in and log out.
-- View the homepage.
-- Browse currently showing movies.
-- Browse coming soon movies.
-- Search for movies.
-- Filter movies by genre or category.
-- View movie details.
-- View movie trailers.
-- View cinema information.
-- View available showtimes.
-- Select a cinema.
-- Select a date and showtime.
-- Select available seats.
-- Review booking information.
-- Book cinema tickets.
-- View booking history.
-- View booking details.
-- Cancel bookings according to system rules.
-- Receive booking confirmation.
-- Manage personal profile.
-- Submit movie ratings after watching.
-
-### 🎞️ Movie Features
-
-- Display now showing movies.
-- Display coming soon movies.
-- Display movie posters.
-- Display movie titles.
-- Display movie descriptions.
-- Display genres.
-- Display duration.
-- Display release dates.
-- Display age ratings.
-- Display trailers.
-- Display movie details.
-- Display available showtimes.
-
-### 🎟️ Booking Features
-
-- Select cinema.
-- Select movie.
-- Select date.
-- Select showtime.
-- Display seat layout.
-- Display available seats.
-- Display reserved seats.
-- Select seats.
-- Calculate ticket price.
-- Display booking summary.
-- Confirm booking.
-- Store booking information.
-- Display booking history.
-
-### 🧑‍💼 Staff Features
-
-- Staff login.
-- View booking information.
-- Manage movie schedules.
-- Manage showtimes.
-- Monitor seat availability.
-- Check booking status.
-- Support customer booking operations.
-- Update selected cinema information.
-
-### 🛡️ Administrator Features
-
-- Administrator login.
-- Manage user accounts.
-- Manage customer accounts.
-- Manage staff accounts.
-- Manage movies.
-- Manage genres.
-- Manage cinemas.
-- Manage screening rooms.
-- Manage showtimes.
-- Manage seat layouts.
-- Manage bookings.
-- View system statistics.
-- Manage website content.
-- Manage user roles and permissions.
+XAMPP hoặc môi trường PHP cục bộ khác có thể được dùng để phát triển trên máy nếu cần.
 
 ---
 
-## 🏗️ Planned Project Structure
+## ✨ Tính năng dự kiến
 
-The project structure may evolve during development.
+### 👤 Tính năng cho khách hàng
+
+- Đăng ký tài khoản.
+- Đăng nhập và đăng xuất.
+- Xem trang chủ.
+- Duyệt danh sách phim đang chiếu.
+- Duyệt danh sách phim sắp chiếu.
+- Tìm kiếm phim.
+- Lọc phim theo thể loại.
+- Xem chi tiết phim.
+- Xem trailer phim.
+- Xem thông tin rạp.
+- Xem các suất chiếu còn trống.
+- Chọn rạp.
+- Chọn ngày và suất chiếu.
+- Chọn ghế còn trống.
+- Xem lại thông tin đặt vé.
+- Đặt vé xem phim.
+- Xem lịch sử đặt vé.
+- Xem chi tiết đặt vé.
+- Hủy vé theo quy định của hệ thống.
+- Nhận xác nhận đặt vé.
+- Quản lý hồ sơ cá nhân.
+- Đánh giá phim sau khi xem.
+
+### 🎞️ Tính năng về phim
+
+- Hiển thị phim đang chiếu.
+- Hiển thị phim sắp chiếu.
+- Hiển thị poster phim.
+- Hiển thị tên phim.
+- Hiển thị mô tả phim.
+- Hiển thị thể loại.
+- Hiển thị thời lượng.
+- Hiển thị ngày khởi chiếu.
+- Hiển thị độ tuổi cho phép.
+- Hiển thị trailer.
+- Hiển thị chi tiết phim.
+- Hiển thị các suất chiếu có sẵn.
+
+### 🎟️ Tính năng đặt vé
+
+- Chọn rạp.
+- Chọn phim.
+- Chọn ngày.
+- Chọn suất chiếu.
+- Hiển thị sơ đồ ghế.
+- Hiển thị ghế còn trống.
+- Hiển thị ghế đã đặt.
+- Chọn ghế.
+- Tính giá vé.
+- Hiển thị tóm tắt đặt vé.
+- Xác nhận đặt vé.
+- Lưu thông tin đặt vé.
+- Hiển thị lịch sử đặt vé.
+
+### 🧑‍💼 Tính năng cho nhân viên
+
+- Đăng nhập nhân viên.
+- Xem thông tin đặt vé.
+- Quản lý lịch chiếu phim.
+- Quản lý suất chiếu.
+- Theo dõi tình trạng ghế.
+- Kiểm tra trạng thái đặt vé.
+- Hỗ trợ khách hàng đặt vé.
+- Cập nhật thông tin rạp được phân công.
+
+### 🛡️ Tính năng cho quản trị viên
+
+- Đăng nhập quản trị viên.
+- Quản lý tài khoản người dùng.
+- Quản lý tài khoản khách hàng.
+- Quản lý tài khoản nhân viên.
+- Quản lý phim.
+- Quản lý thể loại.
+- Quản lý rạp.
+- Quản lý phòng chiếu.
+- Quản lý suất chiếu.
+- Quản lý sơ đồ ghế.
+- Quản lý đặt vé.
+- Xem thống kê hệ thống.
+- Quản lý nội dung website.
+- Quản lý vai trò và phân quyền.
+
+---
+
+## 🏗️ Cấu trúc dự án dự kiến
+
+Cấu trúc dự án có thể thay đổi trong quá trình phát triển.
 
 ```text
 Astra-Lux-Cinema/
 │
-├── index.html
+├── index.html              # Trang chủ
+├── design-system.html      # Trang xem toàn bộ thành phần giao diện
 ├── README.md
 ├── .hintrc
 │
+├── _reference/
+│   └── homepage-stitch.html   # Bản xuất cũ từ Stitch, chỉ để tham khảo nội dung
+│
 ├── assets/
 │   ├── css/
-│   │   ├── style.css
+│   │   ├── style.css            # File tổng: import tất cả CSS bên dưới, mọi trang chỉ cần nhúng file này
+│   │   ├── variables.css        # Màu, font, khoảng cách, bo góc, hiệu ứng chuyển
+│   │   ├── base.css             # Reset và thiết lập chung
+│   │   ├── typography.css       # Tiêu đề, nội dung, nhãn
+│   │   ├── buttons.css
+│   │   ├── form.css
+│   │   ├── cards.css            # Card, thẻ phim, vé đặt chỗ
+│   │   ├── feedback.css         # Badge và alert
+│   │   ├── navigation.css       # Breadcrumb, tabs, phân trang
+│   │   ├── overlays.css         # Modal, loading, skeleton, trạng thái trống
+│   │   ├── layout.css           # Header, footer, container
+│   │   ├── sections.css         # Hero, tiêu đề mục, lưới phim
+│   │   ├── responsive.css       # Media query (luôn import cuối cùng)
+│   │   ├── design-system.css    # Chỉ dùng cho design-system.html
 │   │   ├── home.css
 │   │   └── movie-pages.css
 │   │
@@ -228,31 +245,82 @@ Astra-Lux-Cinema/
     └── bookings/
 ```
 
-> Note: The current repository contains the initial frontend foundation. Additional folders and files will be added during development.
+> Lưu ý: Repository hiện tại chứa phần nền tảng frontend ban đầu. Các thư mục và file khác sẽ được bổ sung trong quá trình phát triển.
 
 ---
 
-## 🗄️ Planned Database Entities
+## 🎨 Design System (hệ thống giao diện)
 
-The database may contain the following main entities:
+Phong cách hình ảnh của website được định nghĩa một lần trong `assets/css/` và dùng lại ở mọi trang. Mở `design-system.html` trên trình duyệt để xem toàn bộ thành phần.
 
-- Users
-- Roles
-- Movies
-- Genres
-- Movie Genres
-- Cinemas
-- Screening Rooms
-- Seats
-- Showtimes
-- Bookings
-- Booking Details
-- Payments
-- Reviews
-- Promotions
-- Notifications
+### Quy tắc
 
-### Basic Relationship Overview
+- Luôn dùng biến CSS trong `variables.css` (ví dụ `var(--color-primary)`), không gõ trực tiếp mã màu hex.
+- Mọi trang chỉ nhúng `assets/css/style.css`, file này sẽ import các file CSS còn lại.
+- `responsive.css` phải luôn nằm cuối cùng trong `style.css`.
+- `design-system.css` chỉ dùng cho `design-system.html`.
+- Ưu tiên dùng class có sẵn trước khi viết CSS mới. Cần thành phần mới thì thêm vào đúng file CSS và đưa ví dụ lên `design-system.html`.
+
+### Token
+
+| Nhóm | Giá trị |
+|---|---|
+| Nền | `#0B0B0F` |
+| Surface | `#131317`, `#1D1D27`, `#262634` |
+| Màu chính (vàng) | `#D6B36A`, hover `#C29F55`, sáng `#F3E5C2` |
+| Chữ | `#F5F5F7`, `#A1A1B0`, `#717182` |
+| Trạng thái | success `#4ADE80`, warning `#FBBF24`, error `#F87171`, info `#60A5FA` |
+| Font tiêu đề | Bodoni Moda |
+| Font nội dung | Plus Jakarta Sans |
+
+### Thành phần
+
+| Nhóm | Class chính |
+|---|---|
+| Typography | `.heading-xl/lg/md/sm`, `.body-lg/md/sm`, `.label-lg/md/sm` |
+| Nút | `.btn`, `.btn-primary`, `.btn-outline`, `.btn-surface`, `.btn-ghost`, `.btn-danger`, `.btn-icon`, `.btn-pill` |
+| Form | `.form-group`, `.form-input`, `.form-select`, `.form-check`, `.form-grid` |
+| Card | `.card`, `.movie-card`, `.pass` |
+| Phản hồi | `.badge-*`, `.alert-info`, `.alert-error` |
+| Điều hướng | `.breadcrumb`, `.tabs`, `.pagination` |
+| Lớp phủ | `.modal`, `.spinner`, `.skeleton`, `.empty` |
+| Khối trang | `.hero`, `.section-head`, `.movie-grid` |
+
+### Điểm ngắt responsive
+
+| Thiết bị | Chiều rộng |
+|---|---|
+| Máy tính | trên 1024px |
+| Máy tính bảng | từ 1024px trở xuống |
+| Điện thoại | từ 768px trở xuống |
+
+### Thêm ảnh poster hoặc banner
+
+Đặt ảnh vào `assets/images/movies/` hoặc `assets/images/banners/`. Ảnh hero dùng `style="background-image: url('...')"`, poster phim dùng `style="--poster: url('...')"` kèm class `.movie-poster-img`.
+
+---
+
+## 🗄️ Các thực thể cơ sở dữ liệu dự kiến
+
+Cơ sở dữ liệu có thể gồm các thực thể chính sau:
+
+- Users (Người dùng)
+- Roles (Vai trò)
+- Movies (Phim)
+- Genres (Thể loại)
+- Movie Genres (Phim - Thể loại)
+- Cinemas (Rạp)
+- Screening Rooms (Phòng chiếu)
+- Seats (Ghế)
+- Showtimes (Suất chiếu)
+- Bookings (Đặt vé)
+- Booking Details (Chi tiết đặt vé)
+- Payments (Thanh toán)
+- Reviews (Đánh giá)
+- Promotions (Khuyến mãi)
+- Notifications (Thông báo)
+
+### Tổng quan quan hệ cơ bản
 
 ```text
 User
@@ -272,87 +340,91 @@ User
       └── Movie
 ```
 
-The final database structure will be refined based on actual system requirements.
+Cấu trúc cơ sở dữ liệu cuối cùng sẽ được hoàn thiện dựa trên yêu cầu thực tế của hệ thống.
 
 ---
 
-## 🔐 Security Considerations
+## 🔐 Các lưu ý về bảo mật
 
-The project will consider the following security practices:
+Dự án sẽ cân nhắc các nguyên tắc bảo mật sau:
 
-- Passwords should be hashed before storage.
-- User input should be validated.
-- SQL injection should be prevented using prepared statements.
-- Authentication should be required for protected functions.
-- Authorization should be applied according to user roles.
-- Sensitive information should not be exposed to the frontend.
-- Session or token-based authentication should be handled securely.
-- Booking requests should be validated on the server.
-- Seat booking should prevent duplicate reservations.
-- Important actions should be checked on the backend.
-- HTTPS should be used when deploying the website online.
+- Mật khẩu phải được băm (hash) trước khi lưu.
+- Dữ liệu người dùng nhập vào phải được kiểm tra hợp lệ.
+- Chống SQL injection bằng prepared statements.
+- Các chức năng được bảo vệ phải yêu cầu xác thực.
+- Phân quyền theo vai trò của người dùng.
+- Không để lộ thông tin nhạy cảm ra frontend.
+- Xử lý session hoặc token xác thực một cách an toàn.
+- Yêu cầu đặt vé phải được kiểm tra ở phía server.
+- Việc đặt ghế phải ngăn đặt trùng.
+- Các hành động quan trọng phải được kiểm tra ở backend.
+- Dùng HTTPS khi triển khai website online.
 
 ---
 
-## 👥 Team Members
+## 👥 Thành viên nhóm
 
-| Member | Role | Main Responsibilities |
+| Thành viên | Vai trò | Trách nhiệm chính |
 |---|---|---|
-| Nguyễn Lâm Hữu Hùng | Backend Developer & Project Integrator | PHP backend, project structure, database integration, authentication, system functionality |
-| Nguyễn Vũ Đăng Thành | UI/UX & Frontend Developer | UI/UX implementation, HTML, CSS, responsive design, homepage, sample data |
-| Tạ Minh Đức | Frontend & Feature Developer | JavaScript interactions, frontend features, movie pages, booking interface, testing, documentation |
+| Nguyễn Lâm Hữu Hùng | Backend Developer & Project Integrator | Backend PHP, cấu trúc dự án, tích hợp cơ sở dữ liệu, xác thực, chức năng hệ thống |
+| Nguyễn Vũ Đăng Thành | UI/UX & Frontend Developer | Triển khai UI/UX, HTML, CSS, responsive, trang chủ, dữ liệu mẫu |
+| Tạ Minh Đức | Frontend & Feature Developer | Tương tác JavaScript, tính năng frontend, các trang phim, giao diện đặt vé, kiểm thử, tài liệu |
 
-### All Members Participate In
+### Tất cả thành viên cùng tham gia
 
-- Requirement analysis
-- Project planning
-- UI/UX discussion
-- Git and GitHub collaboration
-- Code review
-- Debugging
-- Testing
-- Documentation
-- Feature development
-- Project presentation
+- Phân tích yêu cầu
+- Lập kế hoạch dự án
+- Thảo luận UI/UX
+- Cộng tác bằng Git và GitHub
+- Review code
+- Gỡ lỗi
+- Kiểm thử
+- Viết tài liệu
+- Phát triển tính năng
+- Thuyết trình dự án
 
 ---
 
-## 🌿 Development Branches and Task Assignments
+## 🌿 Các nhánh phát triển và phân công
 
-Each team member works on a separate Git branch to reduce conflicts and make collaboration easier.
+Mỗi thành viên làm việc trên một nhánh Git riêng để giảm xung đột và dễ cộng tác.
 
-| Member | Branch | Main Task |
+| Thành viên | Nhánh | Nhiệm vụ chính |
 |---|---|---|
-| Nguyễn Lâm Hữu Hùng | `feature/frontend-foundation` | Project structure, shared frontend foundation, PHP backend, database integration |
-| Nguyễn Vũ Đăng Thành | `feature/homepage-ui` | Homepage interface, responsive layout, header, hero banner, movie sections |
-| Tạ Minh Đức | `feature/movie-pages` | Movies page, movie details, showtimes, JavaScript interactions |
+| Nguyễn Lâm Hữu Hùng | `feature/frontend-foundation` | Cấu trúc dự án, nền tảng frontend dùng chung, backend PHP, tích hợp cơ sở dữ liệu |
+| Nguyễn Lâm Hữu Hùng | `feature/design-system-polish` | Hoàn thiện design system, trang tài liệu giao diện, component trang chủ |
+| Nguyễn Vũ Đăng Thành | `feature/homepage-ui` | Giao diện trang chủ, bố cục responsive, header, hero banner, các mục phim |
+| Tạ Minh Đức | `feature/movie-pages` | Trang Movies, chi tiết phim, lịch chiếu, tương tác JavaScript |
 
 ### 1. Nguyễn Lâm Hữu Hùng
 
-**Branch:**
+**Nhánh:**
 
 ```text
 feature/frontend-foundation
+feature/design-system-polish
 ```
 
-**Responsibilities:**
+**Trách nhiệm:**
 
-- Set up the basic project structure.
-- Create and maintain shared frontend files.
-- Build the initial HTML, CSS, and JavaScript foundation.
-- Develop reusable layout components.
-- Develop PHP backend functionality.
-- Design and integrate the MySQL database.
-- Implement authentication and authorization.
-- Integrate frontend pages with backend functionality.
-- Maintain project structure and coding conventions.
-- Review and merge pull requests when necessary.
-- Coordinate integration between team members.
+- Thiết lập cấu trúc dự án cơ bản.
+- Tạo và duy trì các file frontend dùng chung.
+- Xây dựng nền tảng HTML, CSS và JavaScript ban đầu.
+- Xây dựng và hoàn thiện design system cùng trang `design-system.html`.
+- Phát triển các thành phần bố cục có thể tái sử dụng.
+- Phát triển chức năng backend bằng PHP.
+- Thiết kế và tích hợp cơ sở dữ liệu MySQL.
+- Triển khai xác thực và phân quyền.
+- Tích hợp các trang frontend với backend.
+- Duy trì cấu trúc dự án và quy ước code.
+- Review và merge pull request khi cần.
+- Điều phối việc tích hợp giữa các thành viên.
 
-**Main Working Areas:**
+**Khu vực làm việc chính:**
 
 ```text
 index.html
+design-system.html
 assets/css/
 assets/js/
 backend/
@@ -364,26 +436,26 @@ config/
 
 ### 2. Nguyễn Vũ Đăng Thành
 
-**Branch:**
+**Nhánh:**
 
 ```text
 feature/homepage-ui
 ```
 
-**Responsibilities:**
+**Trách nhiệm:**
 
-- Develop the homepage interface.
-- Implement the header and navigation bar.
-- Build the hero banner section.
-- Create the Now Showing movie section.
-- Create the Coming Soon movie section.
-- Implement the footer.
-- Ensure responsive design for desktop, tablet, and mobile.
-- Maintain visual consistency with the Figma/Stitch design.
-- Prepare sample movie data for the homepage.
-- Improve typography, spacing, colors, and visual presentation.
+- Phát triển giao diện trang chủ.
+- Triển khai header và thanh điều hướng.
+- Xây dựng khu vực hero banner.
+- Tạo mục phim Now Showing (đang chiếu).
+- Tạo mục phim Coming Soon (sắp chiếu).
+- Triển khai footer.
+- Đảm bảo responsive cho máy tính, máy tính bảng và điện thoại.
+- Giữ sự nhất quán về hình ảnh với thiết kế Figma/Stitch.
+- Chuẩn bị dữ liệu phim mẫu cho trang chủ.
+- Cải thiện typography, khoảng cách, màu sắc và cách trình bày.
 
-**Main Working Areas:**
+**Khu vực làm việc chính:**
 
 ```text
 pages/home/
@@ -395,26 +467,26 @@ assets/css/home.css
 
 ### 3. Tạ Minh Đức
 
-**Branch:**
+**Nhánh:**
 
 ```text
 feature/movie-pages
 ```
 
-**Responsibilities:**
+**Trách nhiệm:**
 
-- Develop the Movies page.
-- Develop the Movie Details page.
-- Develop the Showtimes page.
-- Implement movie filtering and searching interactions.
-- Implement JavaScript interactions for movie pages.
-- Display movie information and showtime data.
-- Build the initial booking interface.
-- Test page navigation and frontend functionality.
-- Improve user interaction and usability.
-- Write documentation for implemented features.
+- Phát triển trang Movies.
+- Phát triển trang Movie Details (chi tiết phim).
+- Phát triển trang Showtimes (lịch chiếu).
+- Triển khai tương tác lọc và tìm kiếm phim.
+- Triển khai các tương tác JavaScript cho các trang phim.
+- Hiển thị thông tin phim và dữ liệu suất chiếu.
+- Xây dựng giao diện đặt vé ban đầu.
+- Kiểm thử điều hướng giữa các trang và các chức năng frontend.
+- Cải thiện trải nghiệm và khả năng sử dụng.
+- Viết tài liệu cho các tính năng đã làm.
 
-**Main Working Areas:**
+**Khu vực làm việc chính:**
 
 ```text
 pages/movies/
@@ -425,129 +497,130 @@ assets/js/showtimes.js
 assets/css/movie-pages.css
 ```
 
-> Note: File locations may be adjusted as the project structure evolves. Team members should communicate before modifying shared files such as `index.html`, global CSS files, or common JavaScript files.
+> Lưu ý: Vị trí các file có thể được điều chỉnh khi cấu trúc dự án thay đổi. Các thành viên nên trao đổi trước khi sửa các file dùng chung như `index.html`, các file CSS toàn cục hoặc các file JavaScript dùng chung.
 
 ---
 
-## 🌱 Git Branch Naming Rules
+## 🌱 Quy tắc đặt tên nhánh Git
 
-The project uses separate branches for different features and responsibilities.
+Dự án dùng các nhánh riêng cho từng tính năng và trách nhiệm khác nhau.
 
-### Main Branch
+### Nhánh chính
 
 ```text
 main
 ```
 
-The `main` branch contains the integrated and relatively stable version of the project.
+Nhánh `main` chứa phiên bản đã được tích hợp và tương đối ổn định của dự án.
 
-### Feature Branches
+### Nhánh tính năng
 
 ```text
 feature/frontend-foundation
+feature/design-system-polish
 feature/homepage-ui
 feature/movie-pages
 ```
 
-### Documentation Branches
+### Nhánh tài liệu
 
 ```text
 docs/team-branch-assignments
 docs/update-readme
 ```
 
-### General Naming Convention
+### Quy ước đặt tên chung
 
 ```text
-feature/feature-name
-fix/bug-name
-docs/documentation-name
-refactor/refactor-name
-test/test-name
+feature/ten-tinh-nang
+fix/ten-loi
+docs/ten-tai-lieu
+refactor/ten-viec-tai-cau-truc
+test/ten-viec-kiem-thu
 ```
 
 ---
 
-## 🔄 Git and GitHub Collaboration Workflow
+## 🔄 Quy trình cộng tác Git và GitHub
 
-All members should follow the workflow below.
+Tất cả thành viên làm theo quy trình dưới đây.
 
-### Step 1: Update the Main Branch
+### Bước 1: Cập nhật nhánh main
 
-Before starting new work:
+Trước khi bắt đầu công việc mới:
 
 ```bash
 git checkout main
 git pull origin main
 ```
 
-### Step 2: Create or Switch to Your Feature Branch
+### Bước 2: Tạo hoặc chuyển sang nhánh tính năng của bạn
 
-Example for Thành:
+Ví dụ với Thành:
 
 ```bash
 git checkout -b feature/homepage-ui
 ```
 
-Example for Đức:
+Ví dụ với Đức:
 
 ```bash
 git checkout -b feature/movie-pages
 ```
 
-If the branch already exists locally:
+Nếu nhánh đã có sẵn trên máy:
 
 ```bash
 git checkout feature/homepage-ui
 ```
 
-or:
+hoặc:
 
 ```bash
 git checkout feature/movie-pages
 ```
 
-### Step 3: Check the Current Status
+### Bước 3: Kiểm tra trạng thái hiện tại
 
 ```bash
 git status
 ```
 
-### Step 4: Work on Your Assigned Feature
+### Bước 4: Làm việc trên tính năng được giao
 
-Develop and test your assigned functionality.
+Phát triển và kiểm thử chức năng của bạn.
 
-Avoid modifying the same files as other members without discussion.
+Tránh sửa cùng file với thành viên khác khi chưa trao đổi.
 
-### Step 5: Add Changes
+### Bước 5: Thêm thay đổi
 
-Add a specific file:
+Thêm một file cụ thể:
 
 ```bash
 git add index.html
 ```
 
-Add a folder:
+Thêm một thư mục:
 
 ```bash
 git add assets/
 ```
 
-Add all changed files:
+Thêm tất cả file đã thay đổi:
 
 ```bash
 git add .
 ```
 
-### Step 6: Commit Changes
+### Bước 6: Commit thay đổi
 
-Use a clear and meaningful commit message:
+Dùng commit message rõ ràng, có ý nghĩa:
 
 ```bash
 git commit -m "feat: add homepage hero section"
 ```
 
-Other examples:
+Ví dụ khác:
 
 ```bash
 git commit -m "feat: add movie listing page"
@@ -561,271 +634,278 @@ git commit -m "fix: correct responsive layout"
 git commit -m "docs: update project documentation"
 ```
 
-### Step 7: Push Your Branch
+### Bước 7: Push nhánh của bạn
 
-For Thành:
+Với Thành:
 
 ```bash
 git push -u origin feature/homepage-ui
 ```
 
-For Đức:
+Với Đức:
 
 ```bash
 git push -u origin feature/movie-pages
 ```
 
-For Hùng:
+Với Hùng:
 
 ```bash
 git push -u origin feature/frontend-foundation
 ```
 
-### Step 8: Create a Pull Request
+### Bước 8: Tạo Pull Request
 
-On GitHub:
+Trên GitHub:
 
-1. Open the repository.
-2. Select your pushed branch.
-3. Click **Compare & pull request**.
-4. Set the base branch to `main`.
-5. Review the changed files.
-6. Write a clear pull request title and description.
-7. Create the Pull Request.
-8. Ask another member to review the changes.
-9. Merge after checking the code and resolving conflicts.
-
----
-
-## ⚠️ Collaboration Rules
-
-To keep the project organized, all members should follow these rules:
-
-- Do not code directly on the `main` branch.
-- Always create or use your assigned feature branch.
-- Pull the latest `main` before starting new work.
-- Use meaningful commit messages.
-- Do not force push unless the team agrees.
-- Do not delete another member's work without discussion.
-- Avoid editing the same shared files at the same time.
-- Test your changes before creating a Pull Request.
-- Review the changed files before committing.
-- Communicate before changing the project structure.
-- Resolve conflicts carefully.
-- Keep commits focused on one feature or task.
-- Do not upload passwords, API keys, or sensitive information.
-- Do not commit unnecessary generated files.
-- Keep the README updated when the project structure changes.
+1. Mở repository.
+2. Chọn nhánh bạn vừa push.
+3. Bấm **Compare & pull request**.
+4. Đặt nhánh đích (base) là `main`.
+5. Xem lại các file đã thay đổi.
+6. Viết tiêu đề và mô tả Pull Request rõ ràng.
+7. Tạo Pull Request.
+8. Nhờ một thành viên khác review.
+9. Merge sau khi kiểm tra code và giải quyết xung đột.
 
 ---
 
-## 📋 Current Development Status
+## ⚠️ Quy tắc cộng tác
 
-### Completed
+Để dự án gọn gàng, mọi thành viên cần tuân thủ:
 
-- [x] Create GitHub repository.
-- [x] Initialize local Git repository.
-- [x] Connect local repository to GitHub.
-- [x] Create initial project structure.
-- [x] Add basic `index.html`.
-- [x] Add `assets/css/style.css`.
-- [x] Add `assets/js/main.js`.
-- [x] Create frontend foundation branch.
-- [x] Merge frontend foundation into `main`.
-- [x] Define team members and responsibilities.
-- [x] Define branch assignments.
-- [x] Define Git and GitHub collaboration workflow.
-- [x] Create initial design direction using Figma/Stitch.
-
-### In Progress
-
-- [ ] Build homepage interface.
-- [ ] Build Movies page.
-- [ ] Build Movie Details page.
-- [ ] Build Showtimes page.
-- [ ] Improve responsive design.
-- [ ] Create reusable frontend components.
-- [ ] Prepare sample movie data.
-
-### Planned
-
-- [ ] Design MySQL database.
-- [ ] Create PHP backend structure.
-- [ ] Implement user registration and login.
-- [ ] Implement movie management.
-- [ ] Implement cinema management.
-- [ ] Implement showtime management.
-- [ ] Implement seat selection.
-- [ ] Implement booking functionality.
-- [ ] Implement booking history.
-- [ ] Implement staff features.
-- [ ] Implement administrator features.
-- [ ] Add security validation.
-- [ ] Test the complete system.
-- [ ] Deploy the website online.
-- [ ] Prepare project documentation and presentation.
+- Không code trực tiếp trên nhánh `main`.
+- Luôn tạo hoặc dùng nhánh tính năng được giao.
+- Pull `main` mới nhất trước khi bắt đầu công việc mới.
+- Dùng commit message có ý nghĩa.
+- Không force push trừ khi cả nhóm đồng ý.
+- Không xóa công việc của thành viên khác khi chưa trao đổi.
+- Tránh sửa cùng một file dùng chung cùng lúc.
+- Kiểm thử thay đổi trước khi tạo Pull Request.
+- Xem lại các file đã thay đổi trước khi commit.
+- Trao đổi trước khi thay đổi cấu trúc dự án.
+- Giải quyết xung đột cẩn thận.
+- Mỗi commit chỉ nên tập trung vào một tính năng hoặc một việc.
+- Không tải lên mật khẩu, API key hoặc thông tin nhạy cảm.
+- Không commit các file sinh ra không cần thiết.
+- Cập nhật README khi cấu trúc dự án thay đổi.
 
 ---
 
-## 🗓️ Suggested Development Roadmap
+## 📋 Tình trạng phát triển hiện tại
 
-### Phase 1: Planning and Foundation
+### Đã hoàn thành
 
-- Analyze requirements.
-- Define system roles.
-- Design the project structure.
-- Create the GitHub repository.
-- Set up branches.
-- Create the basic frontend foundation.
+- [x] Tạo repository GitHub.
+- [x] Khởi tạo repository Git trên máy.
+- [x] Kết nối repository local với GitHub.
+- [x] Tạo cấu trúc dự án ban đầu.
+- [x] Thêm `index.html` cơ bản.
+- [x] Thêm `assets/css/style.css`.
+- [x] Thêm `assets/js/main.js`.
+- [x] Tạo nhánh nền tảng frontend.
+- [x] Merge nền tảng frontend vào `main`.
+- [x] Xác định thành viên và trách nhiệm.
+- [x] Xác định phân công nhánh.
+- [x] Xác định quy trình cộng tác Git và GitHub.
+- [x] Tạo định hướng thiết kế ban đầu bằng Figma/Stitch.
+- [x] Xây dựng design system (màu, typography, nút, form, card, phản hồi, điều hướng, lớp phủ).
+- [x] Xây dựng trang tài liệu design system (`design-system.html`) có mục lục bên cạnh.
+- [x] Thêm các thành phần khối trang (hero, tiêu đề mục, lưới phim).
+- [x] Dựng trang chủ gồm hero, Now Showing, Coming Soon và các rạp.
+- [x] Tổ chức lại cấu trúc dự án (`_reference/`, các thư mục ảnh).
 
-### Phase 2: Frontend Development
+### Đang thực hiện
 
-- Build the homepage.
-- Build the Movies page.
-- Build the Movie Details page.
-- Build the Showtimes page.
-- Build the booking interface.
-- Implement responsive design.
+- [x] Xây dựng giao diện trang chủ.
+- [ ] Xây dựng trang Movies.
+- [ ] Xây dựng trang Movie Details.
+- [ ] Xây dựng trang Showtimes.
+- [ ] Cải thiện responsive (đã kiểm tra cơ bản, còn cần thử trên thiết bị thật).
+- [x] Tạo các thành phần frontend có thể tái sử dụng.
+- [x] Chuẩn bị dữ liệu phim mẫu (nội dung chữ trên trang chủ, ảnh poster còn cần bổ sung).
 
-### Phase 3: Backend and Database
+### Kế hoạch
 
-- Design the database.
-- Create MySQL tables.
-- Build PHP configuration.
-- Build backend routes.
-- Implement authentication.
-- Implement movie and showtime APIs.
-- Connect frontend to backend.
-
-### Phase 4: Booking System
-
-- Implement cinema selection.
-- Implement showtime selection.
-- Implement seat selection.
-- Implement booking creation.
-- Prevent duplicate seat reservations.
-- Display booking history.
-
-### Phase 5: Testing and Deployment
-
-- Test frontend pages.
-- Test backend APIs.
-- Test database operations.
-- Test authentication and authorization.
-- Test booking flow.
-- Fix bugs.
-- Deploy the website online.
-- Complete documentation and presentation.
+- [ ] Thiết kế cơ sở dữ liệu MySQL.
+- [ ] Tạo cấu trúc backend PHP.
+- [ ] Triển khai đăng ký và đăng nhập.
+- [ ] Triển khai quản lý phim.
+- [ ] Triển khai quản lý rạp.
+- [ ] Triển khai quản lý suất chiếu.
+- [ ] Triển khai chọn ghế.
+- [ ] Triển khai chức năng đặt vé.
+- [ ] Triển khai lịch sử đặt vé.
+- [ ] Triển khai tính năng cho nhân viên.
+- [ ] Triển khai tính năng cho quản trị viên.
+- [ ] Thêm kiểm tra bảo mật.
+- [ ] Kiểm thử toàn bộ hệ thống.
+- [ ] Triển khai website online.
+- [ ] Chuẩn bị tài liệu và bài thuyết trình dự án.
 
 ---
 
-## 🚀 Local Development
+## 🗓️ Lộ trình phát triển đề xuất
 
-Clone the repository:
+### Giai đoạn 1: Lập kế hoạch và nền tảng
+
+- Phân tích yêu cầu.
+- Xác định vai trò hệ thống.
+- Thiết kế cấu trúc dự án.
+- Tạo repository GitHub.
+- Thiết lập các nhánh.
+- Tạo nền tảng frontend cơ bản.
+
+### Giai đoạn 2: Phát triển frontend
+
+- Xây dựng trang chủ.
+- Xây dựng trang Movies.
+- Xây dựng trang Movie Details.
+- Xây dựng trang Showtimes.
+- Xây dựng giao diện đặt vé.
+- Triển khai thiết kế responsive.
+
+### Giai đoạn 3: Backend và cơ sở dữ liệu
+
+- Thiết kế cơ sở dữ liệu.
+- Tạo các bảng MySQL.
+- Xây dựng cấu hình PHP.
+- Xây dựng các route backend.
+- Triển khai xác thực.
+- Triển khai API phim và suất chiếu.
+- Kết nối frontend với backend.
+
+### Giai đoạn 4: Hệ thống đặt vé
+
+- Triển khai chọn rạp.
+- Triển khai chọn suất chiếu.
+- Triển khai chọn ghế.
+- Triển khai tạo đặt vé.
+- Ngăn đặt trùng ghế.
+- Hiển thị lịch sử đặt vé.
+
+### Giai đoạn 5: Kiểm thử và triển khai
+
+- Kiểm thử các trang frontend.
+- Kiểm thử các API backend.
+- Kiểm thử thao tác cơ sở dữ liệu.
+- Kiểm thử xác thực và phân quyền.
+- Kiểm thử luồng đặt vé.
+- Sửa lỗi.
+- Triển khai website online.
+- Hoàn thiện tài liệu và bài thuyết trình.
+
+---
+
+## 🚀 Chạy dự án trên máy
+
+Clone repository:
 
 ```bash
 git clone https://github.com/thanhnvd1101/Astra-Lux-Cinema.git
 ```
 
-Move into the project directory:
+Di chuyển vào thư mục dự án:
 
 ```bash
 cd Astra-Lux-Cinema
 ```
 
-Open the project in Visual Studio Code:
+Mở dự án bằng Visual Studio Code:
 
 ```bash
 code .
 ```
 
-The initial frontend can be opened by running `index.html` in a browser.
+Mở `index.html` để xem trang chủ, hoặc `design-system.html` để xem thư viện thành phần. Nên dùng tiện ích "Live Server" của VS Code (chạy tại `http://localhost:5500`).
 
-During backend development, a PHP-compatible local server will be required.
+> Mẹo: nếu thư mục dự án nằm trong OneDrive, Git có thể báo lỗi khóa file. Để dự án ở thư mục không đồng bộ (ví dụ `C:\dev\Astra-Lux-Cinema`) sẽ tránh được lỗi này.
 
----
-
-## 🌐 Deployment Plan
-
-The project is intended to be deployed on a hosting platform that supports PHP and MySQL.
-
-The planned deployment requirements include:
-
-- PHP-compatible hosting.
-- MySQL database.
-- Apache or Nginx web server.
-- HTTPS certificate.
-- Domain name.
-- Environment configuration.
-- Secure database credentials.
-- Production error handling.
-- Database backup strategy.
-
-The deployment configuration will be documented after the backend and database are completed.
+Khi phát triển backend, sẽ cần một máy chủ cục bộ hỗ trợ PHP.
 
 ---
 
-## 📚 Learning Outcomes
+## 🌐 Kế hoạch triển khai
 
-Through this project, team members aim to improve their understanding of:
+Dự án dự kiến được triển khai trên nền tảng hosting hỗ trợ PHP và MySQL.
 
-- HTML structure.
-- CSS layout and responsive design.
-- JavaScript programming.
-- DOM manipulation.
-- Frontend component organization.
-- PHP programming.
-- HTTP requests and responses.
-- REST-style API design.
-- MySQL database design.
-- CRUD operations.
-- Authentication and authorization.
-- Git branching and merging.
-- GitHub Pull Requests.
-- Team collaboration.
-- Debugging and testing.
-- Online deployment.
+Các yêu cầu triển khai dự kiến gồm:
+
+- Hosting hỗ trợ PHP.
+- Cơ sở dữ liệu MySQL.
+- Máy chủ web Apache hoặc Nginx.
+- Chứng chỉ HTTPS.
+- Tên miền.
+- Cấu hình môi trường.
+- Bảo mật thông tin đăng nhập cơ sở dữ liệu.
+- Xử lý lỗi ở môi trường thực tế.
+- Chiến lược sao lưu cơ sở dữ liệu.
+
+Cấu hình triển khai sẽ được ghi chép sau khi hoàn thành backend và cơ sở dữ liệu.
 
 ---
 
-## 🔮 Future Improvements
+## 📚 Kết quả học tập
 
-Possible future improvements include:
+Qua dự án này, các thành viên hướng tới việc nâng cao hiểu biết về:
 
-- Online payment integration.
-- QR code ticket generation.
-- Email booking confirmation.
-- Movie recommendation system.
-- Advanced movie search.
-- Promotion and discount management.
-- Multiple cinema branches.
-- Real-time seat availability.
-- Dashboard statistics.
-- Mobile application using Android.
-- API integration with external movie databases.
-- Multi-language support.
-- Dark and light theme customization.
+- Cấu trúc HTML.
+- Bố cục CSS và thiết kế responsive.
+- Lập trình JavaScript.
+- Thao tác DOM.
+- Cách tổ chức thành phần frontend.
+- Lập trình PHP.
+- HTTP request và response.
+- Thiết kế API theo phong cách REST.
+- Thiết kế cơ sở dữ liệu MySQL.
+- Các thao tác CRUD.
+- Xác thực và phân quyền.
+- Rẽ nhánh và merge trong Git.
+- Pull Request trên GitHub.
+- Cộng tác nhóm.
+- Gỡ lỗi và kiểm thử.
+- Triển khai website online.
 
 ---
 
-## 👨‍💻 Team
+## 🔮 Hướng cải tiến trong tương lai
+
+Các cải tiến có thể thực hiện về sau:
+
+- Tích hợp thanh toán online.
+- Tạo vé có mã QR.
+- Gửi email xác nhận đặt vé.
+- Hệ thống gợi ý phim.
+- Tìm kiếm phim nâng cao.
+- Quản lý khuyến mãi và giảm giá.
+- Nhiều chi nhánh rạp.
+- Tình trạng ghế theo thời gian thực.
+- Bảng thống kê (dashboard).
+- Ứng dụng di động trên Android.
+- Tích hợp API với các cơ sở dữ liệu phim bên ngoài.
+- Hỗ trợ đa ngôn ngữ.
+- Tùy chỉnh giao diện sáng và tối.
+
+---
+
+## 👨‍💻 Nhóm thực hiện
 
 ### Nguyễn Lâm Hữu Hùng
 
-Backend development, project structure, database integration, and system integration.
+Phát triển backend, cấu trúc dự án, tích hợp cơ sở dữ liệu, tích hợp hệ thống và design system.
 
 ### Nguyễn Vũ Đăng Thành
 
-UI/UX design, homepage development, responsive interface, and visual consistency.
+Thiết kế UI/UX, phát triển trang chủ, giao diện responsive và sự nhất quán về hình ảnh.
 
 ### Tạ Minh Đức
 
-Frontend feature development, movie pages, JavaScript interactions, testing, and documentation.
+Phát triển tính năng frontend, các trang phim, tương tác JavaScript, kiểm thử và tài liệu.
 
 ---
 
-## 📄 License
+## 📄 Giấy phép
 
-This project is developed for educational, learning, portfolio, and academic purposes.
+Dự án được thực hiện cho mục đích giáo dục, học tập, portfolio và học thuật.
 
-The project may be expanded or modified by the team during future development.
+Nhóm có thể mở rộng hoặc chỉnh sửa dự án trong quá trình phát triển sau này.

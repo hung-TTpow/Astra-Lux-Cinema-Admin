@@ -1,0 +1,74 @@
+/* ===== HERO BANNER ===== */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: 560px;
+    background-color: var(--color-surface);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Lớp tối dần để chữ dễ đọc trên ảnh */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top, var(--color-background) 5%, transparent 60%),
+        linear-gradient(to right, var(--color-background), transparent 70%);
+}
+
+.hero .container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 640px;
+    padding: var(--space-16) 0;
+}
+
+.hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.hero-title {
+    margin-bottom: var(--space-4);
+}
+
+.hero-text {
+    margin-bottom: var(--space-6);
+}
+
+/* ===== TIÊU ĐỀ MỤC (Now Showing, Coming Soon...) ===== */
+.section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.section-head .heading-lg {
+    margin-top: var(--space-1);
+}
+
+/* ===== LƯỚI PHIM 4 CỘT ===== */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+}
+
+/* ===== POSTER CÓ ẢNH THẬT ===== */
+.movie-poster-img {
+    background: linear-gradient(to top, rgba(11, 11, 15, 0.95), rgba(11, 11, 15, 0.1)),
+                var(--poster) center / cover;
+    background-color: var(--color-surface-elevated); /* nền dự phòng khi chưa có ảnh */
+}

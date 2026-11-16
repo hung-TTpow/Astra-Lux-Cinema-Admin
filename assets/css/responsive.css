@@ -2,7 +2,8 @@
 @media (max-width: 1024px) {
 
     .card-grid,
-    .overlay-grid {
+    .overlay-grid,
+    .movie-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -39,6 +40,7 @@
 
     .card-grid,
     .overlay-grid,
+    .movie-grid,
     .form-grid,
     .footer-grid {
         grid-template-columns: 1fr;
@@ -92,5 +94,14 @@
 
     .header-inner .btn {
         white-space: nowrap;
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .section-head {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

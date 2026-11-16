@@ -54,6 +54,7 @@
                     <a href="#feedback">Feedback</a>
                     <a href="#navigation">Navigation</a>
                     <a href="#overlays">Overlays</a>
+                    <a href="#sections">Sections</a>
                 </nav>
             </aside>
 
@@ -83,6 +84,71 @@
                         <div class="ds-swatch"><div class="ds-chip" style="background-color: var(--color-warning)"></div><div class="ds-swatch-info"><span class="ds-swatch-name">Warning</span><span class="ds-swatch-hex">#FBBF24</span><span class="ds-swatch-hex">--color-warning</span></div></div>
                         <div class="ds-swatch"><div class="ds-chip" style="background-color: var(--color-error)"></div><div class="ds-swatch-info"><span class="ds-swatch-name">Error</span><span class="ds-swatch-hex">#F87171</span><span class="ds-swatch-hex">--color-error</span></div></div>
                         <div class="ds-swatch"><div class="ds-chip" style="background-color: var(--color-info)"></div><div class="ds-swatch-info"><span class="ds-swatch-name">Info</span><span class="ds-swatch-hex">#60A5FA</span><span class="ds-swatch-hex">--color-info</span></div></div>
+                        <section class="ds-section" id="sections">
+    <header class="ds-section-head">
+        <p class="label-lg">Page sections</p>
+        <h2 class="heading-lg">Sections</h2>
+        <p class="body-md">Các khối dùng để ráp trang chủ: hero, tiêu đề mục, lưới phim.</p>
+    </header>
+
+    <div class="ds-block">
+        <p class="label-md ds-block-title">Hero</p>
+        <div class="hero" style="background-image: url('assets/images/banners/hero.jpg')">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-meta">
+                        <span class="badge badge-gold">Now Premiering</span>
+                        <span class="body-sm">Sci-Fi • 2h 45m</span>
+                        <span class="badge badge-rating">PG-13</span>
+                    </div>
+                    <h2 class="heading-xl hero-title">Dune: Part Three</h2>
+                    <p class="body-lg hero-text">Paul Atreides ascends to the golden throne and faces the ultimate test of ambition.</p>
+                    <div class="btn-row" style="margin-top:0">
+                        <button class="btn btn-primary">Book Tickets</button>
+                        <button class="btn btn-surface">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <code class="ds-code">.hero · .hero-content · .hero-meta</code>
+    </div>
+
+    <div class="ds-block">
+        <p class="label-md ds-block-title">Section head &amp; movie grid</p>
+        <div class="ds-demo">
+            <div class="section-head">
+                <div>
+                    <span class="label-lg">Blockbuster Selection</span>
+                    <h2 class="heading-lg">Now Showing</h2>
+                </div>
+                <a class="btn btn-outline" href="#">View all</a>
+            </div>
+
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <div class="movie-poster movie-poster-img" style="--poster: url('assets/images/movies/demo.jpg')">
+                        <div class="poster-top">
+                            <span class="poster-tag poster-tag-gold">IMAX</span>
+                            <span class="poster-tag poster-tag-gold">★ 9.4</span>
+                        </div>
+                        <div>
+                            <span class="label-lg">Sci-Fi • 2h 52m</span>
+                            <h3 class="card-title">Interstellar Reissue</h3>
+                        </div>
+                    </div>
+                    <div class="movie-body">
+                        <div class="movie-actions">
+                            <button class="btn btn-surface">Details</button>
+                            <button class="btn btn-primary">Book</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copy khối .movie-card trên thêm 3 lần để đủ 4 thẻ -->
+            </div>
+        </div>
+        <code class="ds-code">.section-head · .movie-grid · .movie-poster-img</code>
+    </div>
+</section>
                     </div>
                     </div>
                 </div>

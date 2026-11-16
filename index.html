@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Lux Cinema</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <div class="logo-mark">★</div>
+                <div>
+                    <span class="logo-name">Astra Lux</span>
+                    <span class="logo-sub">Cinema</span>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#now-showing">Movies</a>
+                <a class="nav-link" href="#cinemas">Showtimes</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-primary">Book Tickets</button>
+                <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('assets/images/banners/hero.jpg')">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-meta">
+                        <span class="badge badge-gold">Now Premiering</span>
+                        <span class="body-sm">Sci-Fi • Epic • 2h 45m</span>
+                        <span class="badge badge-rating">PG-13</span>
+                    </div>
+                    <h1 class="heading-xl hero-title">Dune: Part Three</h1>
+                    <p class="body-lg hero-text">Paul Atreides ascends to the golden throne across the known universe, facing interstellar conflicts, ancient prophecies, and the ultimate test of ambition in IMAX Laser.</p>
+                    <div class="btn-row" style="margin-top:0">
+                        <button class="btn btn-primary">Book Tickets</button>
+                        <button class="btn btn-surface">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="now-showing">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="label-lg">Blockbuster Selection</span>
+                        <h2 class="heading-lg">Now Showing</h2>
+                    </div>
+                    <a class="btn btn-outline" href="#">View all</a>
+                </div>
+                <div class="movie-grid">
+                    <article class="movie-card">
+                        <div class="movie-poster movie-poster-img" style="--poster: url('assets/images/movies/interstellar.jpg')">
+                            <div class="poster-top">
+                                <span class="poster-tag poster-tag-gold">IMAX • Dolby</span>
+                                <span class="poster-tag poster-tag-gold">★ 9.4</span>
+                            </div>
+                            <div>
+                                <span class="label-lg">2h 52m</span>
+                                <h3 class="card-title">Interstellar Reissue</h3>
+                            </div>
+                        </div>
+                        <div class="movie-body">
+                            <p class="body-sm">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                            <div class="movie-actions">
+                                <button class="btn btn-surface">Details</button>
+                                <button class="btn btn-primary">Quick Book</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="movie-card">
+                        <div class="movie-poster movie-poster-img" style="--poster: url('assets/images/movies/neon-genesis-noir.jpg')">
+                            <div class="poster-top">
+                                <span class="poster-tag poster-tag-gold">VIP Suite</span>
+                                <span class="poster-tag poster-tag-gold">★ 8.9</span>
+                            </div>
+                            <div>
+                                <span class="label-lg">2h 10m</span>
+                                <h3 class="card-title">Neon Genesis Noir</h3>
+                            </div>
+                        </div>
+                        <div class="movie-body">
+                            <p class="body-sm">An elite detective uncovers a digital conspiracy in the upper echelons of a mega-city floating sky-high.</p>
+                            <div class="movie-actions">
+                                <button class="btn btn-surface">Details</button>
+                                <button class="btn btn-primary">Quick Book</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="movie-card">
+                        <div class="movie-poster movie-poster-img" style="--poster: url('assets/images/movies/celestial-crown.jpg')">
+                            <div class="poster-top">
+                                <span class="poster-tag poster-tag-gold">IMAX Laser</span>
+                                <span class="poster-tag poster-tag-gold">★ 9.1</span>
+                            </div>
+                            <div>
+                                <span class="label-lg">3h 15m</span>
+                                <h3 class="card-title">The Celestial Crown</h3>
+                            </div>
+                        </div>
+                        <div class="movie-body">
+                            <p class="body-sm">The final battle for the astral realms begins as ancient alliances shatter across the galaxy.</p>
+                            <div class="movie-actions">
+                                <button class="btn btn-surface">Details</button>
+                                <button class="btn btn-primary">Quick Book</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="movie-card">
+                        <div class="movie-poster movie-poster-img" style="--poster: url('assets/images/movies/abyssal-horizon.jpg')">
+                            <div class="poster-top">
+                                <span class="poster-tag poster-tag-gold">Dolby Atmos</span>
+                                <span class="poster-tag poster-tag-gold">★ 8.7</span>
+                            </div>
+                            <div>
+                                <span class="label-lg">1h 58m</span>
+                                <h3 class="card-title">Abyssal Horizon</h3>
+                            </div>
+                        </div>
+                        <div class="movie-body">
+                            <p class="body-sm">Deep sea researchers discover an ancient alien structure buried beneath the ocean floor.</p>
+                            <div class="movie-actions">
+                                <button class="btn btn-surface">Details</button>
+                                <button class="btn btn-primary">Quick Book</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="coming-soon">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="label-lg">Future Premieres</span>
+                        <h2 class="heading-lg">Coming Soon</h2>
+                    </div>
+                    <a class="btn btn-outline" href="#">All releases</a>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <span class="card-label">Release: Nov 24</span>
+                        <h3 class="card-title">Chronos Paradox</h3>
+                        <p class="card-text">Time begins to fracture when a rogue physicist tampers with quantum temporal anchors.</p>
+                        <div class="card-footer">
+                            <span class="badge badge-neutral">Coming soon</span>
+                            <button class="btn btn-outline">Set Reminder</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <span class="card-label">Release: Dec 12</span>
+                        <h3 class="card-title">The Obsidian Spire</h3>
+                        <p class="card-text">An epic dark fantasy adaptation exploring the origins of the shadow monarchs.</p>
+                        <div class="card-footer">
+                            <span class="badge badge-neutral">Coming soon</span>
+                            <button class="btn btn-outline">Set Reminder</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <span class="card-label">Release: Jan 05</span>
+                        <h3 class="card-title">Velocity Zero</h3>
+                        <p class="card-text">High-octane underground street racing meets neural-link technology in 2150.</p>
+                        <div class="card-footer">
+                            <span class="badge badge-neutral">Coming soon</span>
+                            <button class="btn btn-outline">Set Reminder</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cinemas">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <span class="label-lg">Flagship Venues</span>
+                        <h2 class="heading-lg">Choose Your Cinema</h2>
+                    </div>
+                    <a class="btn btn-outline" href="#">All cinemas</a>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3 class="card-title">Astra Grand Luxe Downtown</h3>
+                        <p class="card-text">Our flagship location featuring private cocktail lounges, valet parking, and 4K laser projection.</p>
+                        <div class="badge-row">
+                            <span class="badge badge-gold">Valet Service</span>
+                            <span class="badge badge-gold">VIP Lounge</span>
+                            <span class="badge badge-gold">Dolby Atmos</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="body-sm">Flagship venue</span>
+                            <button class="btn btn-ghost">Explore Showtimes →</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Astra IMAX Marina</h3>
+                        <p class="card-text">Home to the region's largest certified IMAX Laser screen and 12-channel immersive surround sound.</p>
+                        <div class="badge-row">
+                            <span class="badge badge-gold">IMAX Laser 70mm</span>
+                            <span class="badge badge-gold">Waterfront Views</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="body-sm">Flagship venue</span>
+                            <button class="btn btn-ghost">Explore Showtimes →</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Astra VIP Suites</h3>
+                        <p class="card-text">An ultra-exclusive boutique cinema featuring fully reclining leather pods, blankets, and on-demand butler service.</p>
+                        <div class="badge-row">
+                            <span class="badge badge-gold">Butler Service</span>
+                            <span class="badge badge-gold">Reclining Pods</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="body-sm">Flagship venue</span>
+                            <button class="btn btn-ghost">Explore Showtimes →</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <span class="logo-name">Astra Lux</span>
+                    <p class="footer-desc">Luxury cinema and immersive storytelling.</p>
+                </div>
+                <div>
+                    <span class="footer-title">Experience</span>
+                    <ul class="footer-links">
+                        <li><a href="#">IMAX Laser 4K</a></li>
+                        <li><a href="#">Dolby Atmos</a></li>
+                        <li><a href="#">VIP Lounges</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer-title">Portals</span>
+                    <ul class="footer-links">
+                        <li><a href="#">Client Lounge</a></li>
+                        <li><a href="#">Staff Terminal</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="footer-title">Legal</span>
+                    <ul class="footer-links">
+                        <li><a href="#">Ticketing Policy</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2026 Astra Lux Cinema. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
